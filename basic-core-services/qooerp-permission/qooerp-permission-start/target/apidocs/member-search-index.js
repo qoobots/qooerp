@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.qoobot.qooerp.permission","c":"PermissionApplication","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"com.qoobot.qooerp.permission","c":"PermissionApplication","l":"PermissionApplication()","u":"%3Cinit%3E()"}];updateSearchResults();

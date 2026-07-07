@@ -1,0 +1,9 @@
+com.qoobot.qooerp.report.config
+com.qoobot.qooerp.report.controller
+com.qoobot.qooerp.report.dto
+com.qoobot.qooerp.report.entity
+com.qoobot.qooerp.report.enums
+com.qoobot.qooerp.report.exception
+com.qoobot.qooerp.report.mapper
+com.qoobot.qooerp.report.service
+com.qoobot.qooerp.report.service.impl

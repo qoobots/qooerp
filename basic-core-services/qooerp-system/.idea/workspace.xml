@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6737555-5fa7-49c5-bad5-a83637b211d0" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../01-docs/01-开源ERP千功能规划.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-docs/02-QooERP开发模块进度跟踪.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-docs/04-总体架构清单.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-docs/05-大型开源ERP系统开发准备工作清单.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/ExceptionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/ExceptionHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../qooerp-common/src/main/java/com/qoobot/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "qoobot-com"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/qoobot-com/openerp.git",
+    "accountId": "5415de4d-f004-4096-b10f-a53db0db6890"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="39m3HJwz12eA4jNUKZ7rIf2GE3p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.qooerp-system-service [clean,install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/05workspaces/qooerp/qooerp-system",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\05workspaces\qooerp\qooerp-system\qooerp-system-service\src\main\java\com\qoobot\system" />
+      <recent name="D:\05workspaces\qooerp\qooerp-system\qooerp-system-service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-system-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.system.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c6737555-5fa7-49c5-bad5-a83637b211d0" name="更改" comment="" />
+      <created>1771287329310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771287329310</updated>
+      <workItem from="1771287330381" duration="957000" />
+    </task>
+    <servers />
+  </component>
+</project>

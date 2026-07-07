@@ -1,0 +1,5 @@
+com\qoobot\qooerp\lowcode\controller\LowcodeFormController.class
+com\qoobot\qooerp\lowcode\entity\LowcodeForm.class
+com\qoobot\qooerp\lowcode\service\impl\LowcodeFormServiceImpl.class
+com\qoobot\qooerp\lowcode\mapper\LowcodeFormMapper.class
+com\qoobot\qooerp\lowcode\service\LowcodeFormService.class

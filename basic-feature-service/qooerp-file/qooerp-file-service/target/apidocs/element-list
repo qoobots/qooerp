@@ -1,0 +1,7 @@
+com.qoobot.qooerp.file.adapter
+com.qoobot.qooerp.file.controller
+com.qoobot.qooerp.file.dto
+com.qoobot.qooerp.file.entity
+com.qoobot.qooerp.file.mapper
+com.qoobot.qooerp.file.service
+com.qoobot.qooerp.file.service.impl

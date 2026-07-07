@@ -1,0 +1,40 @@
+server:
+  port: 8098
+  servlet:
+    context-path: /message
+
+spring:
+  application:
+    name: qooerp-message
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/qooerp_message?useUnicode=true&characterEncoding=utf8
+    username: qooerp_message
+    password: qooerp_message_2026
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: qooerp
+        group: DEFAULT_GROUP
+      config:
+        server-addr: localhost:8848
+        namespace: qooerp
+        group: DEFAULT_GROUP
+        file-extension: yml
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

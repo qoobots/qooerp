@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/basic-feature-service/qooerp-ai/qooerp-ai-service/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-feature-service/qooerp-ai/qooerp-ai-start/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-data/qooerp-data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-data/qooerp-data-start/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-doc/qooerp-doc-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-doc/qooerp-doc-start/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-i18n/qooerp-i18n-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-i18n/qooerp-i18n-start/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-integration/qooerp-integration-service/pom.xml" />
+        <option value="$PROJECT_DIR$/qooerp-integration/qooerp-integration-start/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

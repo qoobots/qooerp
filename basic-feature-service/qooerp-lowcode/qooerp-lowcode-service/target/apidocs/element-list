@@ -1,0 +1,5 @@
+com.qoobot.qooerp.lowcode.controller
+com.qoobot.qooerp.lowcode.entity
+com.qoobot.qooerp.lowcode.mapper
+com.qoobot.qooerp.lowcode.service
+com.qoobot.qooerp.lowcode.service.impl

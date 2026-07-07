@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="966eb4a3-a029-45c4-89f7-c46ac049b4d4" name="更改" comment="fix">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qooerp-frontend/packages/mobile/capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/qooerp-frontend/packages/mobile/capacitor.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;qoobot-com&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/qoobot-com/openerp.git&quot;,
+    &quot;accountId&quot;: &quot;5415de4d-f004-4096-b10f-a53db0db6890&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/01-docs/02-QooERP开发模块进度跟踪.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="explicitlyEnabledProfiles" value="aliyun-gradle-plugin,aliyun-spring-plugin,aliyun-apache-snapshots,maven2,aliyun-public,aliyun-google,aliyun-spring,aliyun-grails-core" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="39jUjmcIv72TbnWccihn8b3wISk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.qooerp [clean,compile,-rf...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean,install,-DskipTests].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean,install,-rf...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [dependency:purge-local-repository...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-ai-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-ai-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-common [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-finance-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-finance-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-gateway-start [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-monitor-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-monitor-service [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-notify-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-notify-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-permission-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-permission-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-system-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-system-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-system-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-system-service [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;发现新的/更新的数据库配置&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CrmApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayStartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/05workspaces/qooerp&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\05workspaces\\qooerp\\qooerp-frontend\\shared\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\05workspaces\qooerp\business-expand-services\qooerp-crm\qooerp-crm-start\src\main\resources" />
+      <recent name="D:\05workspaces\qooerp\business-expand-services\qooerp-project\qooerp-project-start" />
+      <recent name="D:\05workspaces\qooerp\qooerp-frontend\packages\web\public" />
+      <recent name="D:\05workspaces\qooerp\all-start" />
+      <recent name="D:\05workspaces\qooerp\qooerp-scm\qooerp-scm-start\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\05workspaces\qooerp\basic-core-services\qooerp-gateway\qooerp-gateway-start\src\main\resources" />
+      <recent name="D:\05workspaces\qooerp\business-core-services\docs" />
+      <recent name="D:\05workspaces\qooerp\core-basic-services" />
+      <recent name="D:\05workspaces\qooerp\qooerp-inventory\qooerp-inventory-start\src\main\resources" />
+      <recent name="D:\05workspaces\qooerp\qooerp-inventory\qooerp-inventory-service\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qoobot.qooerp.common.result" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install -U" />
+      <command value="mvn dependency:purge-local-repository -DmanualInclude=&quot;io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter&quot; " />
+      <command value="mvn clean install -DskipTests" />
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn clean compile" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="CrmApplication (1)" value="FAILED" />
+              <entry key="GatewayStartApplication" value="FAILED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayStartApplication">
+    <configuration name="未命名" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="all-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.AllStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-auth-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-auth-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrmApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-crm-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.crm.CrmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-crm-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.crm.CrmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-file-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.file.FileApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinanceStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-finance-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.finance.FinanceStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-gateway-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.gateway.GatewayStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HrStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-hr-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.hr.HrStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-inventory-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.inventory.InventoryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LowcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-lowcode-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.lowcode.LowcodeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-message-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.message.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-monitor-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.monitor.MonitorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotifyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-notify-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.notify.NotifyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrganizationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-organization-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.organization.OrganizationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermissionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-permission-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.permission.PermissionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-production-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.production.ProductionApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-project-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.project.ProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-purchase-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.purchase.PurchaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-report-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.report.ReportApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-sales-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.sales.SalesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-scheduler-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.scheduler.SchedulerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-scm-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.scm.ScmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScmStartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-scm-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.scm.ScmStartApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-system-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.system.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-system-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.system.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-user-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkflowApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="qooerp-workflow-start" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.workflow.WorkflowApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="966eb4a3-a029-45c4-89f7-c46ac049b4d4" name="更改" comment="" />
+      <created>1771209110363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771209110363</updated>
+      <workItem from="1771209111424" duration="2964000" />
+      <workItem from="1771256886821" duration="4642000" />
+      <workItem from="1771261624707" duration="17422000" />
+      <workItem from="1771279777506" duration="16039000" />
+      <workItem from="1771299868674" duration="6425000" />
+      <workItem from="1771306355646" duration="5734000" />
+      <workItem from="1771335711928" duration="12320000" />
+      <workItem from="1771348282256" duration="22417000" />
+      <workItem from="1771372236063" duration="544000" />
+      <workItem from="1771373094990" duration="18561000" />
+      <workItem from="1771430873444" duration="4974000" />
+      <workItem from="1771436182403" duration="16591000" />
+      <workItem from="1771453602267" duration="3265000" />
+      <workItem from="1771457070514" duration="12436000" />
+      <workItem from="1771472012576" duration="452000" />
+      <workItem from="1771519657953" duration="3998000" />
+      <workItem from="1771551977345" duration="3767000" />
+    </task>
+    <task id="LOCAL-00001" summary="create">
+      <option name="closed" value="true" />
+      <created>1771336520218</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771336520218</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create">
+      <option name="closed" value="true" />
+      <created>1771352754681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771352754681</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix">
+      <option name="closed" value="true" />
+      <created>1771552999475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771552999476</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix">
+      <option name="closed" value="true" />
+      <created>1771554365511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771554365511</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="create" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

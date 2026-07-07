@@ -1,0 +1,12 @@
+com.qoobot.qooerp.notify.common
+com.qoobot.qooerp.notify.config
+com.qoobot.qooerp.notify.controller
+com.qoobot.qooerp.notify.dto
+com.qoobot.qooerp.notify.entity
+com.qoobot.qooerp.notify.enums
+com.qoobot.qooerp.notify.exception
+com.qoobot.qooerp.notify.mapper
+com.qoobot.qooerp.notify.sender
+com.qoobot.qooerp.notify.service
+com.qoobot.qooerp.notify.service.impl
+com.qoobot.qooerp.notify.util

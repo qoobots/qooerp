@@ -1,0 +1,32 @@
+Invoking Maven for the goals: [org.apache.maven.plugins:maven-javadoc-plugin:3.6.3:javadoc] with no properties
+
+M2_HOME=D:\ProgramFiles\JetBrains\IntelliJ IDEA 2025.3.2\plugins\maven\lib\maven3
+MAVEN_OPTS=--enable-native-access=ALL-UNNAMED 
+JAVA_HOME=D:\ProgramFiles\Java\jdk-21
+JAVA_OPTS=null
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.qoobot:qooerp-user-service >-------------------
+[INFO] Building qooerp-user-service 1.1.0-260219-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> javadoc:3.6.3:javadoc (default-cli) > generate-sources @ qooerp-user-service >>>
+[INFO] Downloading from shibboleth-releases: https://shibboleth.net/maven/releases/com/qoobot/qooerp/$%7Brevision%7D/qooerp-$%7Brevision%7D.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.477 s
+[INFO] Finished at: 2026-02-19T10:43:09+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project qooerp-user-service: Could not collect dependencies for project com.qoobot:qooerp-user-service:jar:1.1.0-260219-SNAPSHOT
+[ERROR] Failed to read artifact descriptor for com.qoobot:basic-common:jar:1.1.0-260219-SNAPSHOT
+[ERROR] 	Caused by: The following artifacts could not be resolved: com.qoobot:qooerp:pom:${revision} (absent): Could not transfer artifact com.qoobot:qooerp:pom:${revision} from/to shibboleth-releases (https://shibboleth.net/maven/releases/): status code: 403, reason phrase: Forbidden (403)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

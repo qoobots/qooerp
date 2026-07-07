@@ -1,0 +1,8 @@
+com.qoobot.qooerp.purchase.controller
+com.qoobot.qooerp.purchase.dto
+com.qoobot.qooerp.purchase.entity
+com.qoobot.qooerp.purchase.enums
+com.qoobot.qooerp.purchase.feign
+com.qoobot.qooerp.purchase.mapper
+com.qoobot.qooerp.purchase.service
+com.qoobot.qooerp.purchase.service.impl

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.qoobot.qooerp.message","c":"MessageApplication","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"com.qoobot.qooerp.message","c":"MessageApplication","l":"MessageApplication()","u":"%3Cinit%3E()"}];updateSearchResults();

@@ -1,0 +1,6 @@
+com.qoobot.qooerp.inventory.controller
+com.qoobot.qooerp.inventory.dto
+com.qoobot.qooerp.inventory.entity
+com.qoobot.qooerp.inventory.mapper
+com.qoobot.qooerp.inventory.service
+com.qoobot.qooerp.inventory.service.impl

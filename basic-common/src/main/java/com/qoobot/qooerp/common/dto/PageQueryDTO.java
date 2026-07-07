@@ -1,6 +1,5 @@
 package com.qoobot.qooerp.common.dto;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.qoobot.qooerp.common.constant.CommonConstant;
 import lombok.Data;
 

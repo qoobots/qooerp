@@ -1,0 +1,8 @@
+com.qoobot.qooerp.system.config
+com.qoobot.qooerp.system.controller
+com.qoobot.qooerp.system.dto
+com.qoobot.qooerp.system.entity
+com.qoobot.qooerp.system.mapper
+com.qoobot.qooerp.system.service
+com.qoobot.qooerp.system.service.impl
+com.qoobot.qooerp.system.util

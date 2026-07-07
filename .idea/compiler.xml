@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for qooerp" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="qooerp-scheduler-service" />
+        <module name="qooerp-finance-start" />
+        <module name="qooerp-inventory-start" />
+        <module name="qooerp-report-start" />
+        <module name="qooerp-user-service" />
+        <module name="qooerp-file-service" />
+        <module name="qooerp-permission-start" />
+        <module name="qooerp-system-service" />
+        <module name="qooerp-finance-service" />
+        <module name="qooerp-production-start" />
+        <module name="qooerp-gateway-start" />
+        <module name="qooerp-message-start" />
+        <module name="qooerp-project-start" />
+        <module name="qooerp-permission-service" />
+        <module name="qooerp-monitor-service" />
+        <module name="all-start" />
+        <module name="qooerp-gateway-service" />
+        <module name="qooerp-crm-start" />
+        <module name="qooerp-message-service" />
+        <module name="qooerp-organization-service" />
+        <module name="qooerp-auth-start" />
+        <module name="qooerp-report-service" />
+        <module name="qooerp-hr-start" />
+        <module name="qooerp-project-service" />
+        <module name="qooerp-scm-service" />
+        <module name="qooerp-purchase-start" />
+        <module name="qooerp-sales-service" />
+        <module name="qooerp-crm-service" />
+        <module name="qooerp-hr-service" />
+        <module name="qooerp-production-service" />
+        <module name="qooerp-purchase-service" />
+        <module name="qooerp-file-start" />
+        <module name="basic-common" />
+        <module name="qooerp-monitor-start" />
+        <module name="qooerp-lowcode-start" />
+        <module name="qooerp-notify-service" />
+        <module name="qooerp-workflow-start" />
+        <module name="qooerp-organization-start" />
+        <module name="qooerp-sales-start" />
+        <module name="qooerp-scm-start" />
+        <module name="qooerp-workflow-service" />
+        <module name="qooerp-system-start" />
+        <module name="qooerp-inventory-service" />
+        <module name="qooerp-auth-service" />
+        <module name="qooerp-user-start" />
+        <module name="qooerp-lowcode-service" />
+        <module name="qooerp-notify-start" />
+        <module name="qooerp-scheduler-start" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qooerp-ai-service" target="21" />
+      <module name="qooerp-ai-start" target="21" />
+      <module name="qooerp-data-service" target="21" />
+      <module name="qooerp-data-start" target="21" />
+      <module name="qooerp-doc-service" target="21" />
+      <module name="qooerp-doc-start" target="21" />
+      <module name="qooerp-i18n-service" target="21" />
+      <module name="qooerp-i18n-start" target="21" />
+      <module name="qooerp-integration-service" target="21" />
+      <module name="qooerp-integration-start" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="all-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="basic-common" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-ai-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-ai-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-auth-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-auth-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-crm-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-crm-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-data-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-data-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-doc-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-doc-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-file-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-file-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-finance-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-finance-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-gateway-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-gateway-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-hr-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-hr-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-i18n-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-i18n-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-integration-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-integration-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-inventory-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-inventory-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-lowcode-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-lowcode-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-message-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-message-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-monitor-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-monitor-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-notify-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-notify-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-organization-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-organization-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-permission-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-permission-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-production-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-production-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-project-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-project-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-purchase-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-purchase-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-report-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-report-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-sales-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-sales-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-scheduler-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-scheduler-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-scm-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-scm-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-system-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-system-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-user-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-user-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-workflow-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-workflow-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+com.qoobot.qooerp.crm.controller
+com.qoobot.qooerp.crm.dto
+com.qoobot.qooerp.crm.entity
+com.qoobot.qooerp.crm.mapper
+com.qoobot.qooerp.crm.service
+com.qoobot.qooerp.crm.service.impl

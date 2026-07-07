@@ -1,0 +1,15 @@
+com.qoobot.qooerp.permission.annotation
+com.qoobot.qooerp.permission.aspect
+com.qoobot.qooerp.permission.config
+com.qoobot.qooerp.permission.constants
+com.qoobot.qooerp.permission.controller
+com.qoobot.qooerp.permission.dto
+com.qoobot.qooerp.permission.entity
+com.qoobot.qooerp.permission.enums
+com.qoobot.qooerp.permission.exception
+com.qoobot.qooerp.permission.interceptor
+com.qoobot.qooerp.permission.mapper
+com.qoobot.qooerp.permission.service
+com.qoobot.qooerp.permission.service.impl
+com.qoobot.qooerp.permission.util
+com.qoobot.qooerp.permission.vo

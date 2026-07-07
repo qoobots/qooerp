@@ -1,0 +1,9 @@
+com.qoobot.qooerp.organization.config
+com.qoobot.qooerp.organization.controller
+com.qoobot.qooerp.organization.dto
+com.qoobot.qooerp.organization.entity
+com.qoobot.qooerp.organization.enums
+com.qoobot.qooerp.organization.mapper
+com.qoobot.qooerp.organization.service
+com.qoobot.qooerp.organization.service.impl
+com.qoobot.qooerp.organization.vo

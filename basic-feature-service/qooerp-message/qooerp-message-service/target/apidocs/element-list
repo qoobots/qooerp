@@ -1,0 +1,6 @@
+com.qoobot.qooerp.message.controller
+com.qoobot.qooerp.message.dto
+com.qoobot.qooerp.message.entity
+com.qoobot.qooerp.message.mapper
+com.qoobot.qooerp.message.service
+com.qoobot.qooerp.message.service.impl

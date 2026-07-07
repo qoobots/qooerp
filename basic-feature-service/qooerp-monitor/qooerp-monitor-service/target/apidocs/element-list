@@ -1,0 +1,7 @@
+com.qoobot.qooerp.monitor.controller
+com.qoobot.qooerp.monitor.dto
+com.qoobot.qooerp.monitor.entity
+com.qoobot.qooerp.monitor.mapper
+com.qoobot.qooerp.monitor.scheduler
+com.qoobot.qooerp.monitor.service
+com.qoobot.qooerp.monitor.service.impl

@@ -1,0 +1,8 @@
+com.qoobot.qooerp.production.config
+com.qoobot.qooerp.production.controller
+com.qoobot.qooerp.production.dto
+com.qoobot.qooerp.production.entity
+com.qoobot.qooerp.production.mapper
+com.qoobot.qooerp.production.service
+com.qoobot.qooerp.production.service.impl
+com.qoobot.qooerp.production.vo

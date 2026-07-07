@@ -1,0 +1,9 @@
+com.qoobot.qooerp.workflow.config
+com.qoobot.qooerp.workflow.constants
+com.qoobot.qooerp.workflow.controller
+com.qoobot.qooerp.workflow.dto
+com.qoobot.qooerp.workflow.entity
+com.qoobot.qooerp.workflow.enums
+com.qoobot.qooerp.workflow.mapper
+com.qoobot.qooerp.workflow.service
+com.qoobot.qooerp.workflow.service.impl

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.qoobot.qooerp.organization","l":"OrganizationApplication"},{"l":"所有类和接口","u":"allclasses-index.html"}];updateSearchResults();
