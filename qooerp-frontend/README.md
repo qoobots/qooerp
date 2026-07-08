@@ -6,8 +6,8 @@
 [![Vue](https://img.shields.io/badge/Vue-3.4+-42b883.svg)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-3178c6.svg)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0+-646cff.svg)](https://vitejs.dev/)
-[![GitHub stars](https://img.shields.io/github/stars/qoobot-com/openerp)](https://github.com/qoobot-com/openerp)
-[![GitHub forks](https://img.shields.io/github/forks/qoobot-com/openerp)](https://github.com/qoobot-com/openerp/network)
+[![GitHub stars](https://img.shields.io/github/stars/qoobots/qooerp)](https://github.com/qoobots/qooerp)
+[![GitHub forks](https://img.shields.io/github/forks/qoobots/qooerp)](https://github.com/qoobots/qooerp/network)
 
 ### 🚀 全球领先的新一代企业级开源ERP前端解决方案
 ### The Next Generation Enterprise Open-Source ERP Frontend Platform
@@ -181,7 +181,7 @@ QooERP Frontend 是全球领先的企业级ERP前端解决方案,采用现代化
 ### 安装依赖
 ```bash
 # 克隆仓库
-git clone https://github.com/qoobot-com/openerp.git
+git clone https://github.com/qoobots/qooerp.git
 cd qooerp/qooerp-frontend
 
 # 安装 pnpm (如果未安装)
@@ -962,16 +962,16 @@ QooERP Frontend 借鉴了全球领先的 ERP 系统和开源项目的设计理�
 ### 🤝 参与贡献
 我们欢迎所有形式的贡献!请查看 [CONTRIBUTING.md](../CONTRIBUTING.md) 了解详细信息。
 
-- 🐛 [报告 Bug](https://github.com/qoobot-com/openerp/issues)
-- 💡 [提出建议](https://github.com/qoobot-com/openerp/discussions)
-- 📖 [完善文档](https://github.com/qoobot-com/openerp/pulls)
-- 🔧 [提交代码](https://github.com/qoobot-com/openerp/pulls)
+- 🐛 [报告 Bug](https://github.com/qoobots/qooerp/issues)
+- 💡 [提出建议](https://github.com/qoobots/qooerp/discussions)
+- 📖 [完善文档](https://github.com/qoobots/qooerp/pulls)
+- 🔧 [提交代码](https://github.com/qoobots/qooerp/pulls)
 
 ### 📞 获取帮助
 - 📚 [官方文档](https://docs.qooerp.com)
 - 💬 [社区论坛](https://community.qooerp.com)
-- 📧 邮箱: support@qooerp.com
-- 💻 企业服务: enterprise@qooerp.com
+- 📧 邮箱: hello@qoobot.com
+- 💻 企业服务: hello@qoobot.com
 
 ### 🏢 企业服务
 为企业提供专业的技术支持和定制服务:
@@ -1120,7 +1120,7 @@ QooERP Frontend is the world's leading enterprise-level ERP frontend solution, b
 ### Install Dependencies
 ```bash
 # Clone repository
-git clone https://github.com/qoobot-com/openerp.git
+git clone https://github.com/qoobots/qooerp.git
 cd qooerp/qooerp-frontend
 
 # Install pnpm (if not installed)
@@ -1197,16 +1197,16 @@ pnpm test:e2e
 ### 🤝 Contributing
 We welcome all forms of contributions! See [CONTRIBUTING.md](../CONTRIBUTING.md) for details.
 
-- 🐛 [Report Bugs](https://github.com/qoobot-com/openerp/issues)
-- 💡 [Feature Requests](https://github.com/qoobot-com/openerp/discussions)
-- 📖 [Improve Docs](https://github.com/qoobot-com/openerp/pulls)
-- 🔧 [Pull Requests](https://github.com/qoobot-com/openerp/pulls)
+- 🐛 [Report Bugs](https://github.com/qoobots/qooerp/issues)
+- 💡 [Feature Requests](https://github.com/qoobots/qooerp/discussions)
+- 📖 [Improve Docs](https://github.com/qoobots/qooerp/pulls)
+- 🔧 [Pull Requests](https://github.com/qoobots/qooerp/pulls)
 
 ### 📞 Get Help
 - 📚 [Official Documentation](https://docs.qooerp.com)
 - 💬 [Community Forum](https://community.qooerp.com)
-- 📧 Email: support@qooerp.com
-- 💻 Enterprise Services: enterprise@qooerp.com
+- 📧 Email: hello@qoobot.com
+- 💻 Enterprise Services: hello@qoobot.com
 
 ---
 

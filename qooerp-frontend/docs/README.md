@@ -256,7 +256,7 @@
 
 如有疑问或建议,请联系:
 
-- **前端团队邮箱**: frontend@qooerp.com
+- **前端团队邮箱**: hello@qoobot.com
 - **项目 GitHub**: https://github.com/qooerp/qooerp-frontend
 - **项目文档**: https://docs.qooerp.com
 

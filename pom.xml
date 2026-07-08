@@ -21,72 +21,70 @@
 
     <name>qooerp</name>
     <description>qooerp</description>
-    <url>https://github.com/qoobot-com/qooerp</url>
+    <url>https://github.com/qoobots/qooerp</url>
 
     <!-- 模块声明 -->
     <modules>
 
         <!-- 公共模块 -->
-        <module>basic-common</module>
+<!--        <module>basic-common</module>-->
 
         <!-- P0 核心基础服务 -->
-        <module>basic-core-services/qooerp-gateway/qooerp-gateway-service</module>
-        <module>basic-core-services/qooerp-gateway/qooerp-gateway-start</module>
-        <module>basic-core-services/qooerp-auth/qooerp-auth-service</module>
-        <module>basic-core-services/qooerp-auth/qooerp-auth-start</module>
-        <module>basic-core-services/qooerp-system/qooerp-system-service</module>
-        <module>basic-core-services/qooerp-system/qooerp-system-start</module>
-        <module>basic-core-services/qooerp-organization/qooerp-organization-service</module>
-        <module>basic-core-services/qooerp-organization/qooerp-organization-start</module>
-        <module>basic-core-services/qooerp-user/qooerp-user-service</module>
-        <module>basic-core-services/qooerp-user/qooerp-user-start</module>
-        <module>basic-core-services/qooerp-permission/qooerp-permission-service</module>
-        <module>basic-core-services/qooerp-permission/qooerp-permission-start</module>
+        <module>basic-core-services/qooerp-gateway</module>
+        <module>basic-core-services/qooerp-auth</module>
+<!--        <module>basic-core-services/qooerp-system/qooerp-system-service</module>-->
+<!--        <module>basic-core-services/qooerp-system/qooerp-system-start</module>-->
+<!--        <module>basic-core-services/qooerp-organization/qooerp-organization-service</module>-->
+<!--        <module>basic-core-services/qooerp-organization/qooerp-organization-start</module>-->
+<!--        <module>basic-core-services/qooerp-user/qooerp-user-service</module>-->
+<!--        <module>basic-core-services/qooerp-user/qooerp-user-start</module>-->
+<!--        <module>basic-core-services/qooerp-permission/qooerp-permission-service</module>-->
+<!--        <module>basic-core-services/qooerp-permission/qooerp-permission-start</module>-->
 
         <!-- P1 核心业务服务 -->
-        <module>business-core-services/qooerp-hr/qooerp-hr-service</module>
-        <module>business-core-services/qooerp-hr/qooerp-hr-start</module>
-        <module>business-core-services/qooerp-finance/qooerp-finance-service</module>
-        <module>business-core-services/qooerp-finance/qooerp-finance-start</module>
-        <module>business-core-services/qooerp-scm/qooerp-scm-service</module>
-        <module>business-core-services/qooerp-scm/qooerp-scm-start</module>
-        <module>business-core-services/qooerp-sales/qooerp-sales-service</module>
-        <module>business-core-services/qooerp-sales/qooerp-sales-start</module>
-        <module>business-core-services/qooerp-inventory/qooerp-inventory-service</module>
-        <module>business-core-services/qooerp-inventory/qooerp-inventory-start</module>
-        <module>business-core-services/qooerp-purchase/qooerp-purchase-service</module>
-        <module>business-core-services/qooerp-purchase/qooerp-purchase-start</module>
+<!--        <module>business-core-services/qooerp-hr/qooerp-hr-service</module>-->
+<!--        <module>business-core-services/qooerp-hr/qooerp-hr-start</module>-->
+<!--        <module>business-core-services/qooerp-finance/qooerp-finance-service</module>-->
+<!--        <module>business-core-services/qooerp-finance/qooerp-finance-start</module>-->
+<!--        <module>business-core-services/qooerp-scm/qooerp-scm-service</module>-->
+<!--        <module>business-core-services/qooerp-scm/qooerp-scm-start</module>-->
+<!--        <module>business-core-services/qooerp-sales/qooerp-sales-service</module>-->
+<!--        <module>business-core-services/qooerp-sales/qooerp-sales-start</module>-->
+<!--        <module>business-core-services/qooerp-inventory/qooerp-inventory-service</module>-->
+<!--        <module>business-core-services/qooerp-inventory/qooerp-inventory-start</module>-->
+<!--        <module>business-core-services/qooerp-purchase/qooerp-purchase-service</module>-->
+<!--        <module>business-core-services/qooerp-purchase/qooerp-purchase-start</module>-->
 
         <!-- P2 扩展业务服务 -->
-        <module>business-expand-services/qooerp-production/qooerp-production-service</module>
-        <module>business-expand-services/qooerp-production/qooerp-production-start</module>
-        <module>business-expand-services/qooerp-project/qooerp-project-service</module>
-        <module>business-expand-services/qooerp-project/qooerp-project-start</module>
-        <module>business-expand-services/qooerp-crm/qooerp-crm-service</module>
-        <module>business-expand-services/qooerp-crm/qooerp-crm-start</module>
+<!--        <module>business-expand-services/qooerp-production/qooerp-production-service</module>-->
+<!--        <module>business-expand-services/qooerp-production/qooerp-production-start</module>-->
+<!--        <module>business-expand-services/qooerp-project/qooerp-project-service</module>-->
+<!--        <module>business-expand-services/qooerp-project/qooerp-project-start</module>-->
+<!--        <module>business-expand-services/qooerp-crm/qooerp-crm-service</module>-->
+<!--        <module>business-expand-services/qooerp-crm/qooerp-crm-start</module>-->
 
         <!-- P3 高级功能服务 -->
-        <module>basic-feature-service/qooerp-workflow/qooerp-workflow-service</module>
-        <module>basic-feature-service/qooerp-workflow/qooerp-workflow-start</module>
-        <module>basic-feature-service/qooerp-report/qooerp-report-service</module>
-        <module>basic-feature-service/qooerp-report/qooerp-report-start</module>
-        <module>basic-feature-service/qooerp-file/qooerp-file-service</module>
-        <module>basic-feature-service/qooerp-file/qooerp-file-start</module>
-        <module>basic-feature-service/qooerp-message/qooerp-message-service</module>
-        <module>basic-feature-service/qooerp-message/qooerp-message-start</module>
-        <module>basic-feature-service/qooerp-notify/qooerp-notify-service</module>
-        <module>basic-feature-service/qooerp-notify/qooerp-notify-start</module>
-        <module>basic-feature-service/qooerp-scheduler/qooerp-scheduler-service</module>
-        <module>basic-feature-service/qooerp-scheduler/qooerp-scheduler-start</module>
-        <module>basic-feature-service/qooerp-monitor/qooerp-monitor-service</module>
-        <module>basic-feature-service/qooerp-monitor/qooerp-monitor-start</module>
+<!--        <module>basic-feature-service/qooerp-workflow/qooerp-workflow-service</module>-->
+<!--        <module>basic-feature-service/qooerp-workflow/qooerp-workflow-start</module>-->
+<!--        <module>basic-feature-service/qooerp-report/qooerp-report-service</module>-->
+<!--        <module>basic-feature-service/qooerp-report/qooerp-report-start</module>-->
+<!--        <module>basic-feature-service/qooerp-file/qooerp-file-service</module>-->
+<!--        <module>basic-feature-service/qooerp-file/qooerp-file-start</module>-->
+<!--        <module>basic-feature-service/qooerp-message/qooerp-message-service</module>-->
+<!--        <module>basic-feature-service/qooerp-message/qooerp-message-start</module>-->
+<!--        <module>basic-feature-service/qooerp-notify/qooerp-notify-service</module>-->
+<!--        <module>basic-feature-service/qooerp-notify/qooerp-notify-start</module>-->
+<!--        <module>basic-feature-service/qooerp-scheduler/qooerp-scheduler-service</module>-->
+<!--        <module>basic-feature-service/qooerp-scheduler/qooerp-scheduler-start</module>-->
+<!--        <module>basic-feature-service/qooerp-monitor/qooerp-monitor-service</module>-->
+<!--        <module>basic-feature-service/qooerp-monitor/qooerp-monitor-start</module>-->
 <!--        <module>basic-feature-service/qooerp-ai/qooerp-ai-service</module>-->
 <!--        <module>basic-feature-service/qooerp-ai/qooerp-ai-start</module>-->
-        <module>basic-feature-service/qooerp-lowcode/qooerp-lowcode-service</module>
-        <module>basic-feature-service/qooerp-lowcode/qooerp-lowcode-start</module>
+<!--        <module>basic-feature-service/qooerp-lowcode/qooerp-lowcode-service</module>-->
+<!--        <module>basic-feature-service/qooerp-lowcode/qooerp-lowcode-start</module>-->
 
         <!-- All-In-One 聚合服务 -->
-        <module>all-start</module>
+<!--        <module>all-start</module>-->
     </modules>
 
     <!-- 属性配置 -->
@@ -144,8 +142,8 @@
         <!-- 理由: MyBatis 增强工具，简化 CRUD 操作，代码生成功能提升开发效率 -->
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
         <!-- 理由: 数据库版本迁移工具,支持版本化 SQL 脚本,团队协作时保证数据库结构一致 -->
-        <flyway-core.version>12.0.1</flyway-core.version>
-        <flyway-database-postgresql.version>12.0.1</flyway-database-postgresql.version>
+        <flyway-core.version>11.1.0</flyway-core.version>
+        <flyway-database-postgresql.version>11.1.0</flyway-database-postgresql.version>
         <!-- Seata 分布式事务 -->
         <!-- 理由: 分布式事务解决方案，支持 AT/TCC/SAGA 模式，解决微服务分布式事务问题 -->
         <seata.version>2.0.0</seata.version>
@@ -305,7 +303,7 @@
             <!-- MyBatis Plus -->
             <dependency>
                 <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
 
@@ -398,16 +396,16 @@
             </dependency>
 
             <!-- OpenTelemetry 链路追踪 -->
-            <dependency>
-                <groupId>io.opentelemetry.instrumentation</groupId>
-                <artifactId>opentelemetry-spring-boot-starter</artifactId>
-                <version>${opentelemetry-instrumentation.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.opentelemetry</groupId>
-                <artifactId>opentelemetry-exporter-otlp</artifactId>
-                <version>${opentelemetry.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>io.opentelemetry.instrumentation</groupId>-->
+<!--                <artifactId>opentelemetry-spring-boot-starter</artifactId>-->
+<!--                <version>${opentelemetry-instrumentation.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>io.opentelemetry</groupId>-->
+<!--                <artifactId>opentelemetry-exporter-otlp</artifactId>-->
+<!--                <version>${opentelemetry.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -968,7 +966,7 @@
         <developer>
             <id>qoobot</id>
             <name>Qoobot Team</name>
-            <email>dev@qoobot.com</email>
+            <email>hello@qoobot.com</email>
             <organization>Qoobot</organization>
             <organizationUrl>https://www.qoobot.com</organizationUrl>
             <roles>
@@ -991,9 +989,9 @@
 
     <!-- SCM 信息 -->
     <scm>
-        <connection>scm:git:git://github.com/qoobot-com/qooerp.git</connection>
-        <developerConnection>scm:git:ssh://github.com:qoobot/qooerp.git</developerConnection>
-        <url>https://github.com/qoobot-com/qooerp/tree/main</url>
+        <connection>scm:git:git://github.com/qoobots/qooerp.git</connection>
+        <developerConnection>scm:git:ssh://github.com:qoobots/qooerp.git</developerConnection>
+        <url>https://github.com/qoobots/qooerp/tree/main</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -1018,13 +1016,13 @@
     <!-- 问题追踪 -->
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/qoobot-com/qooerp/issues</url>
+        <url>https://github.com/qoobots/qooerp/issues</url>
     </issueManagement>
 
     <!-- 持续集成 -->
     <ciManagement>
         <system>GitHub Actions</system>
-        <url>https://github.com/qoobot-com/qooerp/actions</url>
+        <url>https://github.com/qoobots/qooerp/actions</url>
     </ciManagement>
 
 </project>

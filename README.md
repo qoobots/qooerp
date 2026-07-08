@@ -6,8 +6,8 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.6-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![Vue](https://img.shields.io/badge/Vue-3.4+-42b883.svg)](https://vuejs.org/)
 [![Java](https://img.shields.io/badge/Java-17+-007396.svg)](https://www.oracle.com/java/)
-[![GitHub stars](https://img.shields.io/github/stars/qoobot-com/openerp)](https://github.com/qoobot-com/openerp)
-[![GitHub forks](https://img.shields.io/github/forks/qoobot-com/openerp)](https://github.com/qoobot-com/openerp/network)
+[![GitHub stars](https://img.shields.io/github/stars/qoobots/qooerp)](https://github.com/qoobots/qooerp)
+[![GitHub forks](https://img.shields.io/github/forks/qoobots/qooerp)](https://github.com/qoobots/qooerp/network)
 
 ### 🚀 全球领先的新一代企业级开源ERP系统
 ### The World's Leading Enterprise Open-Source ERP System
@@ -190,14 +190,14 @@ QooERP 深度融合前沿 AI 技术,内置 **10,000 名数字员工**,为企业�
 | Kafka | 3.6+ | 可选消息队列 | [kafka.apache.org](https://kafka.apache.org/) |
 
 #### 数据库与存储
-| 技术 | 版本 | 说明 | 官方地址 |
-|------|------|------|---------|
-| PostgreSQL | 15.5+ | 主数据库 | [postgresql.org](https://www.postgresql.org/) |
+| 技术 | 版本    | 说明 | 官方地址 |
+|------|-------|------|---------|
+| PostgreSQL | 16.12 | 主数据库 | [postgresql.org](https://www.postgresql.org/) |
 | ShardingSphere | 5.5.1 | 分库分表中间件 | [shardingsphere.apache.org](https://shardingsphere.apache.org/) |
 | Seata | 2.0.0 | 分布式事务 | [seata.io](https://seata.io/) |
 | Elasticsearch | 8.11+ | 全文搜索 | [elastic.co](https://www.elastic.co/) |
 | MinIO | Latest | 对象存储 | [min.io](https://min.io/) |
-| Flyway | 10.x | 数据库版本管理 | [flywaydb.org](https://flywaydb.org/) |
+| Flyway | 10.x  | 数据库版本管理 | [flywaydb.org](https://flywaydb.org/) |
 | Liquibase | 4.25+ | 可选数据库迁移工具 | [liquibase.org](https://www.liquibase.org/) |
 
 #### 工作流与引擎
@@ -385,7 +385,7 @@ qooerp/
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/qoobot-com/openerp.git
+git clone https://github.com/qoobots/qooerp.git
 cd qooerp
 
 # 2. 启动基础服务 (PostgreSQL、Redis、RocketMQ、Nacos、Elasticsearch)
@@ -806,10 +806,10 @@ server {
 
 ### 📞 获取帮助
 
-- 🐛 [报告 Bug](https://github.com/qoobot-com/openerp/issues)
-- 💡 [提出建议](https://github.com/qoobot-com/openerp/discussions)
-- 📖 [完善文档](https://github.com/qoobot-com/openerp/pulls)
-- 🔧 [提交代码](https://github.com/qoobot-com/openerp/pulls)
+- 🐛 [报告 Bug](https://github.com/qoobots/qooerp/issues)
+- 💡 [提出建议](https://github.com/qoobots/qooerp/discussions)
+- 📖 [完善文档](https://github.com/qoobots/qooerp/pulls)
+- 🔧 [提交代码](https://github.com/qoobots/qooerp/pulls)
 
 ---
 
@@ -833,25 +833,25 @@ server {
 - 📚 [官方文档](https://docs.qooerp.com)
 - 💬 [社区论坛](https://community.qooerp.com)
 - 🎥 [视频教程](https://www.youtube.com/@qooerp)
-- 📧 邮箱: support@qooerp.com
+- 📧 邮箱: hello@qoobot.com
 
 ### 🏢 企业服务
 为企业提供专业的技术支持和定制服务:
 
 | 服务类型 | 说明 | 联系方式 |
 |---------|------|---------|
-| 💰 企业级支持 | 7x24 技术支持,SLA 保障 | enterprise@qooerp.com |
-| 🎓 技术培训 | 定制化培训,现场指导 | training@qooerp.com |
-| 🔧 定制开发 | 按需定制,源码交付 | custom@qooerp.com |
-| 🚀 上线部署 | 专业部署,运维保障 | deploy@qooerp.com |
-| 📋 咨询服务 | 架构设计,技术选型 | consulting@qooerp.com |
+| 💰 企业级支持 | 7x24 技术支持,SLA 保障 | hello@qoobot.com |
+| 🎓 技术培训 | 定制化培训,现场指导 | hello@qoobot.com |
+| 🔧 定制开发 | 按需定制,源码交付 | hello@qoobot.com |
+| 🚀 上线部署 | 专业部署,运维保障 | hello@qoobot.com |
+| 📋 咨询服务 | 架构设计,技术选型 | hello@qoobot.com |
 
 ### 📱 联系方式
 - 官网: https://www.qooerp.com
 - 文档: https://docs.qooerp.com
 - 论坛: https://community.qooerp.com
 - 博客: https://blog.qooerp.com
-- GitHub: https://github.com/qoobot-com/openerp
+- GitHub: https://github.com/qoobots/qooerp
 
 ---
 
@@ -1130,7 +1130,7 @@ QooERP deeply integrates cutting-edge AI technologies with **10,000 digital empl
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/qoobot-com/openerp.git
+git clone https://github.com/qoobots/qooerp.git
 cd qooerp
 
 # 2. Start infrastructure services
@@ -1217,10 +1217,10 @@ We welcome all forms of contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 ### 📞 Get Help
 
-- 🐛 [Report Bugs](https://github.com/qoobot-com/openerp/issues)
-- 💡 [Feature Requests](https://github.com/qoobot-com/openerp/discussions)
-- 📖 [Improve Docs](https://github.com/qoobot-com/openerp/pulls)
-- 🔧 [Pull Requests](https://github.com/qoobot-com/openerp/pulls)
+- 🐛 [Report Bugs](https://github.com/qoobots/qooerp/issues)
+- 💡 [Feature Requests](https://github.com/qoobots/qooerp/discussions)
+- 📖 [Improve Docs](https://github.com/qoobots/qooerp/pulls)
+- 🔧 [Pull Requests](https://github.com/qoobots/qooerp/pulls)
 
 ---
 
@@ -1244,24 +1244,24 @@ This project is licensed under the [Apache License 2.0](./LICENSE).
 - 📚 [Official Docs](https://docs.qooerp.com)
 - 💬 [Community Forum](https://community.qooerp.com)
 - 🎥 [Video Tutorials](https://www.youtube.com/@qooerp)
-- 📧 Email: support@qooerp.com
+- 📧 Email: hello@qoobot.com
 
 ### 🏢 Enterprise Services
 
 | Service Type | Description | Contact |
 |-------------|-------------|---------|
-| 💰 Enterprise Support | 7x24 technical support, SLA guarantee | enterprise@qooerp.com |
-| 🎓 Training | Customized training, on-site guidance | training@qooerp.com |
-| 🔧 Custom Development | Custom development, source code delivery | custom@qooerp.com |
-| 🚀 Deployment | Professional deployment, ops guarantee | deploy@qooerp.com |
-| 📋 Consulting | Architecture design, technology selection | consulting@qooerp.com |
+| 💰 Enterprise Support | 7x24 technical support, SLA guarantee | hello@qoobot.com |
+| 🎓 Training | Customized training, on-site guidance | hello@qoobot.com |
+| 🔧 Custom Development | Custom development, source code delivery | hello@qoobot.com |
+| 🚀 Deployment | Professional deployment, ops guarantee | hello@qoobot.com |
+| 📋 Consulting | Architecture design, technology selection | hello@qoobot.com |
 
 ### 📱 Contact
 - Website: https://www.qooerp.com
 - Docs: https://docs.qooerp.com
 - Forum: https://community.qooerp.com
 - Blog: https://blog.qooerp.com
-- GitHub: https://github.com/qoobot-com/openerp
+- GitHub: https://github.com/qoobots/qooerp
 
 ---
 
