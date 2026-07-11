@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 900" font-family="'Microsoft YaHei','PingFang SC',Arial,sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="cacheGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="searchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b"/>
+      <stop offset="100%" style="stop-color:#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c3483"/>
+      <stop offset="100%" style="stop-color:#a2b6df"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f5576c"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4facfe"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="0" y="0" width="1300" height="50" fill="url(#headerGrad)"/>
+  <text x="650" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">QooERP 数据架构图</text>
+  <text x="650" y="47" text-anchor="middle" fill="#8899aa" font-size="10">多级缓存 + 分库分表 + 读写分离 + 搜索与存储</text>
+
+  <!-- ======================== 应用层 ======================== -->
+  <rect x="20" y="60" width="1260" height="50" rx="8" fill="#f0f0ff" stroke="#667eea" stroke-width="1.5"/>
+  <text x="35" y="82" fill="#667eea" font-size="13" font-weight="bold">应用层 Application Layer</text>
+  <text x="200" y="82" fill="#555" font-size="10">qooerp-auth · qooerp-system · qooerp-permission · qooerp-user · qooerp-organization · 业务服务...</text>
+  <text x="200" y="100" fill="#888" font-size="9">MyBatis Plus 3.5.7（通用CRUD）+ Spring Data JPA（复杂查询）+ HikariCP 连接池</text>
+
+  <!-- ======================== 缓存层 ======================== -->
+  <rect x="20" y="120" width="1260" height="190" rx="8" fill="#fff5f5" stroke="#f5576c" stroke-width="1.5"/>
+  <text x="35" y="142" fill="#f5576c" font-size="13" font-weight="bold">多级缓存架构 Cache Layer</text>
+
+  <!-- L1 -->
+  <rect x="40" y="155" width="380" height="60" rx="8" fill="white" stroke="#f5576c" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="40" y="155" width="100" height="60" rx="8" fill="url(#cacheGrad)"/>
+  <text x="90" y="182" text-anchor="middle" fill="white" font-size="12" font-weight="bold">L1</text>
+  <text x="90" y="198" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">本地缓存</text>
+  <text x="160" y="175" fill="#555" font-size="10" font-weight="bold">Caffeine 3.1.8 — JVM 堆内缓存</text>
+  <text x="160" y="193" fill="#888" font-size="9">热点数据 · 毫秒级响应 · 自动过期 · 大小限制</text>
+  <text x="160" y="208" fill="#888" font-size="8">@Cacheable → 先查 L1 Caffeine</text>
+
+  <!-- 箭头 L1 -> L2 -->
+  <line x1="420" y1="185" x2="460" y2="185" stroke="#f5576c" stroke-width="2" marker-end="url(#arrowPink)"/>
+  <text x="430" y="178" fill="#f5576c" font-size="8">未命中</text>
+
+  <!-- L2 -->
+  <rect x="460" y="155" width="380" height="60" rx="8" fill="white" stroke="#f5576c" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="460" y="155" width="100" height="60" rx="8" fill="url(#cacheGrad)"/>
+  <text x="510" y="182" text-anchor="middle" fill="white" font-size="12" font-weight="bold">L2</text>
+  <text x="510" y="198" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">分布式缓存</text>
+  <text x="580" y="175" fill="#555" font-size="10" font-weight="bold">Redis 7.2 + Redisson 3.29</text>
+  <text x="580" y="193" fill="#888" font-size="9">分布式缓存 · 毫秒级响应 · 数据共享</text>
+  <text x="580" y="208" fill="#888" font-size="8">分布式锁 · 发布订阅</text>
+
+  <!-- 箭头 L2 -> DB -->
+  <line x1="840" y1="185" x2="880" y2="185" stroke="#f5576c" stroke-width="2" marker-end="url(#arrowPink)"/>
+  <text x="850" y="178" fill="#f5576c" font-size="8">未命中</text>
+
+  <!-- L3 DB -->
+  <rect x="880" y="155" width="380" height="60" rx="8" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="880" y="155" width="100" height="60" rx="8" fill="url(#dbGrad)"/>
+  <text x="930" y="182" text-anchor="middle" fill="white" font-size="12" font-weight="bold">L3</text>
+  <text x="930" y="198" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">数据库</text>
+  <text x="1000" y="175" fill="#555" font-size="10" font-weight="bold">PostgreSQL 15+</text>
+  <text x="1000" y="193" fill="#888" font-size="9">主数据库 · 持久化存储</text>
+  <text x="1000" y="208" fill="#888" font-size="8">命中后回写 L1 + L2</text>
+
+  <!-- 缓存策略 -->
+  <rect x="40" y="225" width="1220" height="35" rx="5" fill="#fff0f0" stroke="#f5576c" stroke-width="1"/>
+  <text x="55" y="241" fill="#f5576c" font-size="9" font-weight="bold">Cache-Aside 策略：</text>
+  <text x="180" y="241" fill="#555" font-size="9">读：先查 L1 Caffeine → 未命中查 L2 Redis → 未命中查 DB → 回写 L1+L2</text>
+  <text x="55" y="255" fill="#f5576c" font-size="9" font-weight="bold">写策略：</text>
+  <text x="130" y="255" fill="#555" font-size="9">先写 DB → 删除 L1+L2 缓存 → 下次读取时重新加载（避免缓存不一致）</text>
+
+  <!-- ======================== 数据库层 ======================== -->
+  <rect x="20" y="320" width="1260" height="220" rx="8" fill="#f0f8ff" stroke="#4facfe" stroke-width="1.5"/>
+  <text x="35" y="342" fill="#4facfe" font-size="13" font-weight="bold">数据库架构 Database Layer</text>
+
+  <!-- 分库分表 -->
+  <rect x="40" y="355" width="590" height="80" rx="6" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <text x="55" y="375" fill="#4facfe" font-size="12" font-weight="bold">ShardingSphere 5.5.1 — 分库分表</text>
+  <rect x="55" y="385" width="180" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="145" y="400" text-anchor="middle" fill="#4facfe" font-size="9">数据库分片 · tenant_id 哈希取模</text>
+  <rect x="245" y="385" width="180" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="335" y="400" text-anchor="middle" fill="#4facfe" font-size="9">表分片 · 时间范围 (按月)</text>
+  <rect x="435" y="385" width="180" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="525" y="400" text-anchor="middle" fill="#4facfe" font-size="9">广播表 · 全局配置表</text>
+  <text x="55" y="425" fill="#888" font-size="9">支持千万级数据表 · 自动扩容 · 透明路由</text>
+
+  <!-- 读写分离 -->
+  <rect x="650" y="355" width="610" height="80" rx="6" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <text x="665" y="375" fill="#4facfe" font-size="12" font-weight="bold">读写分离 + 主从复制</text>
+  <rect x="665" y="385" width="140" height="22" rx="4" fill="url(#dbGrad)"/>
+  <text x="735" y="400" text-anchor="middle" fill="white" font-size="9">主库 (Master) — 写入</text>
+  <line x1="810" y1="396" x2="840" y2="396" stroke="#4facfe" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <rect x="845" y="385" width="140" height="22" rx="4" fill="url(#dbGrad)"/>
+  <text x="915" y="400" text-anchor="middle" fill="white" font-size="9">从库 (Slave) — 只读</text>
+  <rect x="1000" y="385" width="100" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="1050" y="400" text-anchor="middle" fill="#4facfe" font-size="9">异步复制</text>
+  <text x="665" y="425" fill="#888" font-size="9">写操作路由到主库 · 读操作路由到从库 · ShardingSphere 自动读写分离</text>
+
+  <!-- 分布式事务 + 迁移 -->
+  <rect x="40" y="445" width="380" height="55" rx="6" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <text x="55" y="465" fill="#4facfe" font-size="12" font-weight="bold">Seata 2.0 — 分布式事务</text>
+  <text x="55" y="483" fill="#888" font-size="9">AT 模式（自动补偿） · TCC 模式（手动补偿）</text>
+  <text x="55" y="497" fill="#888" font-size="9">性能损耗 &lt; 10% · 最终一致性保证</text>
+
+  <rect x="440" y="445" width="380" height="55" rx="6" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <text x="455" y="465" fill="#4facfe" font-size="12" font-weight="bold">Flyway — 数据库版本迁移</text>
+  <text x="455" y="483" fill="#888" font-size="9">V1__init.sql → V2__add_column.sql → V3__...</text>
+  <text x="455" y="497" fill="#888" font-size="9">版本化 SQL 脚本 · 自动迁移 · 回滚支持</text>
+
+  <rect x="840" y="445" width="420" height="55" rx="6" fill="white" stroke="#4facfe" stroke-width="1" filter="url(#shadow)"/>
+  <text x="855" y="465" fill="#4facfe" font-size="12" font-weight="bold">数据库拆分 — 按服务分库</text>
+  <text x="855" y="483" fill="#888" font-size="9">qooerp_auth · qooerp_system · qooerp_permission</text>
+  <text x="855" y="497" fill="#888" font-size="9">qooerp_user · qooerp_organization · qooerp_hr · ...</text>
+
+  <!-- ======================== 搜索与存储层 ======================== -->
+  <rect x="20" y="550" width="1260" height="130" rx="8" fill="#f0fff4" stroke="#43e97b" stroke-width="1.5"/>
+  <text x="35" y="572" fill="#43e97b" font-size="13" font-weight="bold">搜索与对象存储 Search &amp; Storage Layer</text>
+
+  <!-- ES -->
+  <rect x="40" y="585" width="380" height="55" rx="6" fill="white" stroke="#43e97b" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="40" y="585" width="100" height="55" rx="6" fill="url(#searchGrad)"/>
+  <text x="90" y="610" text-anchor="middle" fill="white" font-size="12" font-weight="bold">ES</text>
+  <text x="90" y="626" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">8.11+</text>
+  <text x="160" y="605" fill="#555" font-size="11" font-weight="bold">Elasticsearch — 全文搜索</text>
+  <text x="160" y="623" fill="#888" font-size="9">商品搜索 · 日志检索 · 模糊查询 · 高亮</text>
+  <text x="160" y="637" fill="#888" font-size="8">CDC (Debezium/Canal) 实时同步 PG → ES</text>
+
+  <!-- MinIO -->
+  <rect x="440" y="585" width="380" height="55" rx="6" fill="white" stroke="#43e97b" stroke-width="1" filter="url(#shadow)"/>
+  <rect x="440" y="585" width="100" height="55" rx="6" fill="url(#searchGrad)"/>
+  <text x="490" y="610" text-anchor="middle" fill="white" font-size="12" font-weight="bold">MinIO</text>
+  <text x="490" y="626" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">S3 兼容</text>
+  <text x="560" y="605" fill="#555" font-size="11" font-weight="bold">MinIO — 对象存储</text>
+  <text x="560" y="623" fill="#888" font-size="9">文件上传 · 图片存储 · 附件管理</text>
+  <text x="560" y="637" fill="#888" font-size="8">S3 API 兼容 · 分布式部署 · 纠删码</text>
+
+  <!-- 数据同步 -->
+  <rect x="840" y="585" width="420" height="55" rx="6" fill="white" stroke="#43e97b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="855" y="605" fill="#43e97b" font-size="12" font-weight="bold">CDC 变更数据捕获</text>
+  <text x="855" y="623" fill="#888" font-size="9">Debezium / Canal — 监听 PostgreSQL WAL 日志</text>
+  <text x="855" y="637" fill="#888" font-size="8">实时同步数据变更到 Elasticsearch · 最终一致性</text>
+
+  <!-- ======================== 消息队列层 ======================== -->
+  <rect x="20" y="690" width="1260" height="85" rx="8" fill="#fff8f0" stroke="#fa709a" stroke-width="1.5"/>
+  <text x="35" y="712" fill="#fa709a" font-size="13" font-weight="bold">消息队列与数据流 Message Queue &amp; Data Flow</text>
+
+  <rect x="40" y="725" width="380" height="40" rx="5" fill="url(#infraGrad)" filter="url(#shadow)"/>
+  <text x="230" y="742" text-anchor="middle" fill="white" font-size="11" font-weight="bold">RocketMQ 5.3 — 消息队列</text>
+  <text x="230" y="758" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">异步解耦 · 削峰填谷 · 事件驱动 · 最终一致性</text>
+
+  <rect x="440" y="725" width="400" height="40" rx="5" fill="white" stroke="#fa709a" stroke-width="1"/>
+  <text x="640" y="742" text-anchor="middle" fill="#555" font-size="10">Topic: auth-events / user-events / biz-events / notify-events</text>
+  <text x="640" y="758" text-anchor="middle" fill="#888" font-size="9">消费者：日志服务 · 通知服务 · 工作流 · 报表 · ES索引更新</text>
+
+  <rect x="860" y="725" width="400" height="40" rx="5" fill="white" stroke="#fa709a" stroke-width="1"/>
+  <text x="1060" y="742" text-anchor="middle" fill="#555" font-size="10">DLQ 死信队列 — 消费失败重试 · 人工介入</text>
+  <text x="1060" y="758" text-anchor="middle" fill="#888" font-size="9">最大重试次数 · 消息回溯 · 异常告警</text>
+
+  <!-- 图例 -->
+  <rect x="20" y="790" width="1260" height="40" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <rect x="140" y="803" width="20" height="12" rx="3" fill="url(#cacheGrad)"/>
+  <text x="168" y="814" fill="#555" font-size="10">缓存层</text>
+  <rect x="270" y="803" width="20" height="12" rx="3" fill="url(#dbGrad)"/>
+  <text x="298" y="814" fill="#555" font-size="10">数据库层</text>
+  <rect x="410" y="803" width="20" height="12" rx="3" fill="url(#searchGrad)"/>
+  <text x="438" y="814" fill="#555" font-size="10">搜索/存储层</text>
+  <rect x="560" y="803" width="20" height="12" rx="3" fill="url(#infraGrad)"/>
+  <text x="588" y="814" fill="#555" font-size="10">消息队列</text>
+
+  <!-- 连接线 -->
+  <line x1="650" y1="110" x2="650" y2="120" stroke="#f5576c" stroke-width="2"/>
+  <line x1="650" y1="310" x2="650" y2="320" stroke="#4facfe" stroke-width="2"/>
+  <line x1="650" y1="540" x2="650" y2="550" stroke="#43e97b" stroke-width="2"/>
+  <line x1="650" y1="680" x2="650" y2="690" stroke="#fa709a" stroke-width="2"/>
+</svg>

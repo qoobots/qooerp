@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" font-family="'Microsoft YaHei','PingFang SC',Arial,sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="microGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c3483"/>
+      <stop offset="100%" style="stop-color:#a2b6df"/>
+    </linearGradient>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b"/>
+      <stop offset="100%" style="stop-color:#38f9d7"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="0" y="0" width="1200" height="50" fill="url(#headerGrad)"/>
+  <text x="600" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">QooERP 双模式部署架构图</text>
+  <text x="600" y="47" text-anchor="middle" fill="#8899aa" font-size="10">All-In-One 聚合单体 + 微服务独立部署 · 渐进式演进</text>
+
+  <!-- ======================== 左侧：All-In-One 模式 ======================== -->
+  <rect x="20" y="62" width="570" height="870" rx="10" fill="#f5f0ff" stroke="#764ba2" stroke-width="2"/>
+  <rect x="20" y="62" width="570" height="35" rx="10" fill="url(#monoGrad)"/>
+  <rect x="20" y="80" width="570" height="17" fill="url(#monoGrad)"/>
+  <text x="305" y="85" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🔄 All-In-One 聚合单体部署模式</text>
+  <text x="305" y="100" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">适合小微企业 · 开发测试 · 快速启动</text>
+
+  <!-- all-start 启动模块 -->
+  <rect x="45" y="112" width="520" height="70" rx="8" fill="url(#startGrad)" filter="url(#shadow)"/>
+  <text x="305" y="135" text-anchor="middle" fill="white" font-size="14" font-weight="bold">all-start 聚合启动模块</text>
+  <text x="305" y="153" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="10">AllStartApplication.java</text>
+  <text x="305" y="168" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">@SpringBootApplication(scanBasePackages = "com.qoobot.qooerp.**")</text>
+
+  <!-- 箭头 -->
+  <line x1="305" y1="185" x2="305" y2="210" stroke="#764ba2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- 聚合的 service 模块 -->
+  <rect x="45" y="213" width="520" height="280" rx="8" fill="white" stroke="#764ba2" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="55" y="232" fill="#764ba2" font-size="12" font-weight="bold">聚合所有 *-service 业务模块 (21个)</text>
+
+  <!-- 核心服务行 -->
+  <rect x="60" y="243" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="137" y="260" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-auth-service</text>
+  <text x="137" y="275" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">认证授权</text>
+
+  <rect x="225" y="243" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="302" y="260" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-system-service</text>
+  <text x="302" y="275" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">系统管理</text>
+
+  <rect x="390" y="243" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="467" y="260" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-permission-service</text>
+  <text x="467" y="275" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">权限管理</text>
+
+  <!-- 第二行 -->
+  <rect x="60" y="293" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="137" y="310" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-user-service</text>
+  <text x="137" y="325" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">用户管理</text>
+
+  <rect x="225" y="293" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="302" y="310" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-organization-service</text>
+  <text x="302" y="325" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">组织管理</text>
+
+  <rect x="390" y="293" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="467" y="310" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-hr-service</text>
+  <text x="467" y="325" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">人力资源</text>
+
+  <!-- 第三行 -->
+  <rect x="60" y="343" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="137" y="360" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-finance-service</text>
+  <text x="137" y="375" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">财务管理</text>
+
+  <rect x="225" y="343" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="302" y="360" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-scm-service</text>
+  <text x="302" y="375" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">供应链</text>
+
+  <rect x="390" y="343" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="467" y="360" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-sales-service</text>
+  <text x="467" y="375" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">销售管理</text>
+
+  <!-- 第四行 -->
+  <rect x="60" y="393" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="137" y="410" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-inventory-service</text>
+  <text x="137" y="425" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">库存管理</text>
+
+  <rect x="225" y="393" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="302" y="410" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-purchase-service</text>
+  <text x="302" y="425" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">采购管理</text>
+
+  <rect x="390" y="393" width="155" height="40" rx="5" fill="url(#serviceGrad)"/>
+  <text x="467" y="410" text-anchor="middle" fill="white" font-size="10" font-weight="bold">+ 6个功能服务</text>
+  <text x="467" y="425" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">workflow/file/...</text>
+
+  <!-- 基础设施 -->
+  <rect x="45" y="510" width="520" height="60" rx="8" fill="white" stroke="#43e97b" stroke-width="1"/>
+  <text x="55" y="530" fill="#43e97b" font-size="11" font-weight="bold">共享基础设施</text>
+  <rect x="55" y="538" width="100" height="22" rx="4" fill="url(#infraGrad)"/>
+  <text x="105" y="553" text-anchor="middle" fill="white" font-size="9">PostgreSQL 单库</text>
+  <rect x="165" y="538" width="100" height="22" rx="4" fill="url(#infraGrad)"/>
+  <text x="215" y="553" text-anchor="middle" fill="white" font-size="9">Redis 单实例</text>
+  <rect x="275" y="538" width="100" height="22" rx="4" fill="url(#infraGrad)"/>
+  <text x="325" y="553" text-anchor="middle" fill="white" font-size="9">内嵌 Tomcat</text>
+  <rect x="385" y="538" width="100" height="22" rx="4" fill="url(#infraGrad)"/>
+  <text x="435" y="553" text-anchor="middle" fill="white" font-size="9">本地日志文件</text>
+
+  <!-- 特点 -->
+  <rect x="45" y="582" width="520" height="95" rx="8" fill="#f8f4ff" stroke="#764ba2" stroke-width="1"/>
+  <text x="55" y="602" fill="#764ba2" font-size="12" font-weight="bold">模式特点</text>
+  <text x="55" y="620" fill="#555" font-size="10">• 单一可执行 JAR，启动简单：java -jar all-start.jar</text>
+  <text x="55" y="637" fill="#555" font-size="10">• 无需 Nacos、Gateway 等中间件，适合快速开发验证</text>
+  <text x="55" y="654" fill="#555" font-size="10">• 模块间直接方法调用，无网络开销，调试方便</text>
+  <text x="55" y="671" fill="#555" font-size="10">• 数据库共享，无需处理分布式事务</text>
+
+  <!-- ======================== 中间：演进箭头 ======================== -->
+  <rect x="570" y="390" width="60" height="60" rx="30" fill="white" stroke="#555" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="415" text-anchor="middle" fill="#555" font-size="20">→</text>
+  <text x="600" y="435" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">渐进式</text>
+  <text x="600" y="447" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">演进</text>
+
+  <!-- ======================== 右侧：微服务模式 ======================== -->
+  <rect x="610" y="62" width="570" height="870" rx="10" fill="#fff5f5" stroke="#f5576c" stroke-width="2"/>
+  <rect x="610" y="62" width="570" height="35" rx="10" fill="url(#microGrad)"/>
+  <rect x="610" y="80" width="570" height="17" fill="url(#microGrad)"/>
+  <text x="895" y="85" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🌐 微服务独立部署模式</text>
+  <text x="895" y="100" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="10">适合中大型企业 · 生产环境 · 独立扩缩容</text>
+
+  <!-- 注册中心 + 配置中心 -->
+  <rect x="635" y="112" width="520" height="50" rx="8" fill="url(#infraGrad)" filter="url(#shadow)"/>
+  <text x="895" y="133" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Nacos 2.3 集群 — 服务注册与发现 + 配置中心</text>
+  <text x="895" y="150" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="9">所有服务启动时注册到 Nacos · 动态配置下发 · 健康检查</text>
+
+  <line x1="895" y1="165" x2="895" y2="185" stroke="#f5576c" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Gateway -->
+  <rect x="660" y="188" width="470" height="48" rx="6" fill="white" stroke="#f5576c" stroke-width="1.5"/>
+  <rect x="660" y="188" width="130" height="48" rx="6" fill="url(#microGrad)"/>
+  <text x="725" y="210" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Gateway :8000</text>
+  <text x="725" y="226" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">Spring Cloud Gateway</text>
+  <text x="810" y="206" fill="#555" font-size="9">路由转发 · JWT鉴权 · Sentinel限流熔断 · 负载均衡</text>
+  <text x="810" y="224" fill="#999" font-size="8">qooerp-gateway · 独立单体 · 无 @EnableDiscoveryClient(Reactive自动发现)</text>
+
+  <!-- 微服务集群 -->
+  <rect x="635" y="248" width="520" height="280" rx="8" fill="white" stroke="#f5576c" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="645" y="268" fill="#f5576c" font-size="12" font-weight="bold">微服务集群 (各 *-start 模块独立部署)</text>
+
+  <!-- 第一行 -->
+  <rect x="650" y="280" width="155" height="48" rx="5" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="727" y="299" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-auth :8001</text>
+  <text x="727" y="316" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">认证授权 · OAuth2/JWT</text>
+  <text x="727" y="326" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">✅ 94 Java · context-path=/auth</text>
+
+  <rect x="820" y="280" width="155" height="48" rx="5" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="897" y="299" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-system :8083</text>
+  <text x="897" y="316" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">系统管理 · 配置/日志</text>
+  <text x="897" y="326" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">✅ 68 Java · start/service分离</text>
+
+  <rect x="990" y="280" width="155" height="48" rx="5" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="1067" y="299" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-permission :8082</text>
+  <text x="1067" y="316" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">权限管理 · RBAC+ABAC</text>
+  <text x="1067" y="326" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">✅ 75 Java · start/service分离</text>
+
+  <!-- 第二行 -->
+  <rect x="650" y="340" width="155" height="48" rx="5" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="727" y="359" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-user :8084</text>
+  <text x="727" y="376" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">用户管理 · 角色关联</text>
+  <text x="727" y="386" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">🔶 仅启动类</text>
+
+  <rect x="820" y="340" width="155" height="48" rx="5" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="897" y="359" text-anchor="middle" fill="white" font-size="10" font-weight="bold">qooerp-organization :8085</text>
+  <text x="897" y="376" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="8">组织管理 · 部门/岗位</text>
+  <text x="897" y="386" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="7">✅ 42 Java · start/service分离</text>
+
+  <rect x="990" y="340" width="155" height="48" rx="5" fill="#ddd" filter="url(#shadow)"/>
+  <text x="1067" y="359" text-anchor="middle" fill="#888" font-size="10" font-weight="bold">P1/P2/P3 业务服务</text>
+  <text x="1067" y="376" text-anchor="middle" fill="#888" font-size="8">HR/Finance/SCM/...</text>
+  <text x="1067" y="386" text-anchor="middle" fill="#aaa" font-size="7">⬜ 规划中</text>
+
+  <!-- 服务间调用 -->
+  <rect x="650" y="400" width="495" height="55" rx="6" fill="#fff8f0" stroke="#f0a0a0" stroke-width="1"/>
+  <text x="660" y="418" fill="#f5576c" font-size="10" font-weight="bold">服务间通信</text>
+  <text x="660" y="435" fill="#555" font-size="9">OpenFeign 声明式调用 · Nacos 服务发现 · Sentinel 熔断保护</text>
+  <text x="660" y="450" fill="#888" font-size="8">Auth→User·Permission | User→Org·Permission | 业务服务→核心服务</text>
+
+  <!-- 分布式基础设施 -->
+  <rect x="635" y="542" width="520" height="95" rx="8" fill="white" stroke="#43e97b" stroke-width="1"/>
+  <text x="645" y="562" fill="#43e97b" font-size="11" font-weight="bold">分布式基础设施</text>
+
+  <rect x="650" y="572" width="120" height="30" rx="4" fill="url(#infraGrad)"/>
+  <text x="710" y="591" text-anchor="middle" fill="white" font-size="9">PostgreSQL 集群</text>
+  <rect x="780" y="572" width="120" height="30" rx="4" fill="url(#infraGrad)"/>
+  <text x="840" y="591" text-anchor="middle" fill="white" font-size="9">Redis 集群</text>
+  <rect x="910" y="572" width="120" height="30" rx="4" fill="url(#infraGrad)"/>
+  <text x="970" y="591" text-anchor="middle" fill="white" font-size="9">RocketMQ 集群</text>
+  <rect x="1040" y="572" width="105" height="30" rx="4" fill="url(#infraGrad)"/>
+  <text x="1092" y="591" text-anchor="middle" fill="white" font-size="9">ES 集群</text>
+
+  <rect x="650" y="608" width="120" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="710" y="623" text-anchor="middle" fill="#4facfe" font-size="8">ShardingSphere 分库分表</text>
+  <rect x="780" y="608" width="120" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="840" y="623" text-anchor="middle" fill="#4facfe" font-size="8">Seata 分布式事务</text>
+  <rect x="910" y="608" width="120" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="970" y="623" text-anchor="middle" fill="#4facfe" font-size="8">Flyway 数据库迁移</text>
+  <rect x="1040" y="608" width="105" height="22" rx="4" fill="#e8f4fd"/>
+  <text x="1092" y="623" text-anchor="middle" fill="#4facfe" font-size="8">MinIO 对象存储</text>
+
+  <!-- 特点 -->
+  <rect x="635" y="650" width="520" height="95" rx="8" fill="#fff0f0" stroke="#f5576c" stroke-width="1"/>
+  <text x="645" y="670" fill="#f5576c" font-size="12" font-weight="bold">模式特点</text>
+  <text x="645" y="688" fill="#555" font-size="10">• 每个服务独立部署、独立扩缩容，资源利用率高</text>
+  <text x="645" y="705" fill="#555" font-size="10">• 技术栈异构友好，不同服务可独立选型</text>
+  <text x="645" y="722" fill="#555" font-size="10">• 故障隔离，单服务故障不影响全局</text>
+  <text x="645" y="739" fill="#555" font-size="10">• 需要 Nacos + Gateway + Sentinel 等基础设施支持</text>
+
+  <!-- ======================== 底部图例 ======================== -->
+  <rect x="20" y="760" width="1160" height="60" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <text x="35" y="782" fill="#555" font-size="12" font-weight="bold">图例</text>
+  <rect x="130" y="772" width="20" height="12" rx="3" fill="url(#startGrad)"/>
+  <text x="158" y="783" fill="#555" font-size="10">聚合启动模块</text>
+  <rect x="280" y="772" width="20" height="12" rx="3" fill="url(#serviceGrad)"/>
+  <text x="308" y="783" fill="#555" font-size="10">微服务模块</text>
+  <rect x="420" y="772" width="20" height="12" rx="3" fill="url(#infraGrad)"/>
+  <text x="448" y="783" fill="#555" font-size="10">基础设施</text>
+  <rect x="560" y="772" width="20" height="12" rx="3" fill="url(#microGrad)"/>
+  <text x="588" y="783" fill="#555" font-size="10">网关层</text>
+
+  <text x="700" y="783" fill="#888" font-size="10">✅ 已完成  🔶 部分完成  ⬜ 规划中</text>
+  <text x="700" y="800" fill="#888" font-size="9">单体模式适合开发阶段 · 微服务模式适合生产环境 · 两种模式共享同一套 service 业务代码</text>
+</svg>

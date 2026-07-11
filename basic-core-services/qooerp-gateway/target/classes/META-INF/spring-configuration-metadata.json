@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "qooerp.gateway",
+      "type": "com.qoobot.qooerp.gateway.properties.GatewayProperties",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "qooerp.gateway.auth-enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用认证过滤器",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.default-burst-capacity",
+      "type": "java.lang.Long",
+      "description": "默认突发容量",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.default-replenish-rate",
+      "type": "java.lang.Long",
+      "description": "默认限流速率（每秒请求数）",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.log-enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用日志过滤器",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.permission-enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用权限过滤器",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.rate-limit-enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用限流过滤器",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.token-header",
+      "type": "java.lang.String",
+      "description": "Token请求头名称",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    },
+    {
+      "name": "qooerp.gateway.token-prefix",
+      "type": "java.lang.String",
+      "description": "Token前缀",
+      "sourceType": "com.qoobot.qooerp.gateway.properties.GatewayProperties"
+    }
+  ],
+  "hints": []
+}

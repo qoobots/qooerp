@@ -1,0 +1,122 @@
+server:
+  port: 8000
+
+logging:
+  level:
+    root: INFO
+    com.qoobot.qooerp: DEBUG
+
+spring:
+  application:
+    name: gateway
+  config:
+    import: optional:nacos:${spring.application.name}.yaml
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: reactive
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        # 使用 Nacos 动态路由，服务自动注册即可
+        # 访问格式: http://gateway:8000/{service-name}/xxx
+        # 例如: http://gateway:8000/qooerp-auth/login
+    nacos:
+      server-addr: localhost:8848
+      username: qooerp
+      password: qooerp
+      discovery:
+        enabled: true
+        namespace: public
+        group: DEFAULT_GROUP
+      config:
+        enabled: true
+        namespace: public
+        group: DEFAULT_GROUP
+        file-extension: yaml
+    sentinel:
+      enabled: true
+      transport:
+        dashboard: localhost:8010
+        port: 18719
+      eager: true
+      scg:
+        fallback:
+          mode: response
+          response-status: 429
+          response-body: '{"code": 429, "message": "访问过于频繁，请稍后再试"}'
+      datasource:
+        # 流控规则
+        flow:
+          nacos:
+            server-addr: localhost:8848
+            username: qooerp
+            password: qooerp
+            namespace: public
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-flow-rules
+            rule-type: flow
+        # 降级规则
+        degrade:
+          nacos:
+            server-addr: localhost:8848
+            username: qooerp
+            password: qooerp
+            namespace: public
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-degrade-rules
+            rule-type: degrade
+        # 系统规则
+        system:
+          nacos:
+            server-addr: localhost:8848
+            username: qooerp
+            password: qooerp
+            namespace: public
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-system-rules
+            rule-type: system
+        # 授权规则
+        authority:
+          nacos:
+            server-addr: localhost:8848
+            username: qooerp
+            password: qooerp
+            namespace: public
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-authority-rules
+            rule-type: authority
+        # 热点参数规则
+        param-flow:
+          nacos:
+            server-addr: localhost:8848
+            username: qooerp
+            password: qooerp
+            namespace: public
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-param-flow-rules
+            rule-type: param-flow
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 123456
+      database: 0
+      timeout: 3000ms
+  redis:
+    redisson:
+      config: |
+        singleServerConfig:
+          address: "redis://localhost:6379"
+          password: "123456"
+          database: 0
+          connectionPoolSize: 64
+          connectionMinimumIdleSize: 10
+          idleConnectionTimeout: 10000
+          connectTimeout: 10000
+          timeout: 3000
+
+

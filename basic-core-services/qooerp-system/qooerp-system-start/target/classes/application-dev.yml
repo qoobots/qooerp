@@ -7,7 +7,7 @@ spring:
         group: @nacos.group@
         metadata:
           preserved.register.source: SPADE
-          version: 1.1.0-260219-SNAPSHOT
+          version: 1.1.0-260225-SNAPSHOT
       config:
         server-addr: @nacos.addr@
         namespace: @nacos.namespace@

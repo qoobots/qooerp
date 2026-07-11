@@ -1,0 +1,126 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /auth
+
+spring:
+  application:
+    name: qooerp-auth
+
+  main:
+    allow-bean-definition-overriding: true
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: localhost:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        username: nacos
+        password: nacos
+        register-enabled: true
+        naming-load-cache-at-start: true
+      config:
+        enabled: false
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/qooerp_auth
+    username: qooerp
+    password: qooerp123
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 123456
+      database: 0
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1ms
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  type-aliases-package: com.qoobot.qooerp.auth.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# JWT配置
+jwt:
+  secret: qooerp-auth-secret-key-2026-change-in-production
+  access-token-expiration: 7200000    # 2小时
+  refresh-token-expiration: 604800000  # 7天
+  issuer: qooerp-auth
+
+# OAuth2 + OIDC 配置
+oauth2:
+  authorization-server:
+    issuer: http://localhost:8001/auth
+    jwk-uri: http://localhost:8001/auth/.well-known/jwks.json
+    discovery-uri: http://localhost:8001/auth/.well-known/openid-configuration
+
+# 登录安全配置
+auth:
+  login:
+    max-fail-count: 5      # 最大失败次数
+    lock-duration: 1800      # 锁定时长（秒）
+    ip-max-failed: 10        # IP最大失败次数
+    ip-lock-duration: 3600   # IP锁定时长（秒）
+
+  captcha:
+    enabled: true
+    expire-minutes: 5
+    width: 120
+    height: 40
+
+# MFA配置
+mfa:
+  issuer: QooERP
+  code-digits: 6
+  time-step-seconds: 30
+
+# 第三方登录配置
+third-party:
+  wechat:
+    app-id: your-wechat-app-id
+    app-secret: your-wechat-app-secret
+
+  dingtalk:
+    app-id: your-dingtalk-app-id
+    app-secret: your-dingtalk-app-secret
+
+  wecom:
+    app-id: your-wecom-app-id
+    app-secret: your-wecom-app-secret
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.qoobot.qooerp.auth: DEBUG
+    com.qoobot.qooerp.auth.mapper: DEBUG
+    com.alibaba.nacos.client: INFO
+    com.alibaba.cloud.nacos: INFO
+
+# SpringDoc配置
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    tags-sorter: alpha
+    operations-sorter: alpha
+  show-actuator: false

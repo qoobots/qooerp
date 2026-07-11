@@ -9,6 +9,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/basic-core-services/qooerp-auth/qooerp-auth-start/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-core-services/qooerp-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-core-services/qooerp-nacos/qooerp-nacos-service/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-core-services/qooerp-nacos/qooerp-nacos-start/pom.xml" />
         <option value="$PROJECT_DIR$/basic-feature-service/qooerp-ai/qooerp-ai-service/pom.xml" />
         <option value="$PROJECT_DIR$/basic-feature-service/qooerp-ai/qooerp-ai-start/pom.xml" />
         <option value="$PROJECT_DIR$/qooerp-data/qooerp-data-service/pom.xml" />

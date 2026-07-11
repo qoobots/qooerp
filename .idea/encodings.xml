@@ -5,8 +5,14 @@
     <file url="file://$PROJECT_DIR$/basic-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-auth/qooerp-auth-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-auth/qooerp-auth-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-gateway/qooerp-gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-gateway/qooerp-gateway-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-nacos/qooerp-nacos-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-nacos/qooerp-nacos-start/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-nacos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-organization/qooerp-organization-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-organization/qooerp-organization-start/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-core-services/qooerp-permission/qooerp-permission-service/src/main/java" charset="UTF-8" />

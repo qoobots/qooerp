@@ -7,75 +7,72 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-      </profile>
-      <profile name="Annotation profile for qooerp" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-        </processorPath>
-        <module name="qooerp-scheduler-service" />
-        <module name="qooerp-finance-start" />
-        <module name="qooerp-inventory-start" />
-        <module name="qooerp-report-start" />
-        <module name="qooerp-user-service" />
-        <module name="qooerp-file-service" />
-        <module name="qooerp-permission-start" />
-        <module name="qooerp-system-service" />
-        <module name="qooerp-finance-service" />
-        <module name="qooerp-production-start" />
-        <module name="qooerp-gateway-start" />
-        <module name="qooerp-message-start" />
-        <module name="qooerp-project-start" />
-        <module name="qooerp-permission-service" />
-        <module name="qooerp-monitor-service" />
-        <module name="all-start" />
-        <module name="qooerp-gateway-service" />
-        <module name="qooerp-crm-start" />
-        <module name="qooerp-message-service" />
-        <module name="qooerp-organization-service" />
-        <module name="qooerp-auth-start" />
-        <module name="qooerp-report-service" />
-        <module name="qooerp-hr-start" />
-        <module name="qooerp-project-service" />
-        <module name="qooerp-scm-service" />
-        <module name="qooerp-purchase-start" />
-        <module name="qooerp-sales-service" />
-        <module name="qooerp-crm-service" />
-        <module name="qooerp-hr-service" />
-        <module name="qooerp-production-service" />
-        <module name="qooerp-purchase-service" />
-        <module name="qooerp-file-start" />
-        <module name="basic-common" />
-        <module name="qooerp-monitor-start" />
-        <module name="qooerp-lowcode-start" />
-        <module name="qooerp-notify-service" />
-        <module name="qooerp-workflow-start" />
-        <module name="qooerp-organization-start" />
-        <module name="qooerp-sales-start" />
-        <module name="qooerp-scm-start" />
-        <module name="qooerp-workflow-service" />
-        <module name="qooerp-system-start" />
-        <module name="qooerp-inventory-service" />
-        <module name="qooerp-auth-service" />
-        <module name="qooerp-user-start" />
-        <module name="qooerp-lowcode-service" />
-        <module name="qooerp-notify-start" />
-        <module name="qooerp-scheduler-start" />
+        <module name="qooerp-auth" />
+        <module name="qooerp-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="all-start" target="21" />
+      <module name="basic-common" target="21" />
       <module name="qooerp-ai-service" target="21" />
       <module name="qooerp-ai-start" target="21" />
+      <module name="qooerp-auth-service" target="21" />
+      <module name="qooerp-auth-start" target="21" />
+      <module name="qooerp-crm-service" target="21" />
+      <module name="qooerp-crm-start" target="21" />
       <module name="qooerp-data-service" target="21" />
       <module name="qooerp-data-start" target="21" />
       <module name="qooerp-doc-service" target="21" />
       <module name="qooerp-doc-start" target="21" />
+      <module name="qooerp-file-service" target="21" />
+      <module name="qooerp-file-start" target="21" />
+      <module name="qooerp-finance-service" target="21" />
+      <module name="qooerp-finance-start" target="21" />
+      <module name="qooerp-gateway-service" target="21" />
+      <module name="qooerp-gateway-start" target="21" />
+      <module name="qooerp-hr-service" target="21" />
+      <module name="qooerp-hr-start" target="21" />
       <module name="qooerp-i18n-service" target="21" />
       <module name="qooerp-i18n-start" target="21" />
       <module name="qooerp-integration-service" target="21" />
       <module name="qooerp-integration-start" target="21" />
+      <module name="qooerp-inventory-service" target="21" />
+      <module name="qooerp-inventory-start" target="21" />
+      <module name="qooerp-lowcode-service" target="21" />
+      <module name="qooerp-lowcode-start" target="21" />
+      <module name="qooerp-message-service" target="21" />
+      <module name="qooerp-message-start" target="21" />
+      <module name="qooerp-monitor-service" target="21" />
+      <module name="qooerp-monitor-start" target="21" />
+      <module name="qooerp-nacos" target="21" />
+      <module name="qooerp-nacos-service" target="21" />
+      <module name="qooerp-nacos-start" target="21" />
+      <module name="qooerp-notify-service" target="21" />
+      <module name="qooerp-notify-start" target="21" />
+      <module name="qooerp-organization-service" target="21" />
+      <module name="qooerp-organization-start" target="21" />
+      <module name="qooerp-permission-service" target="21" />
+      <module name="qooerp-permission-start" target="21" />
+      <module name="qooerp-production-service" target="21" />
+      <module name="qooerp-production-start" target="21" />
+      <module name="qooerp-project-service" target="21" />
+      <module name="qooerp-project-start" target="21" />
+      <module name="qooerp-purchase-service" target="21" />
+      <module name="qooerp-purchase-start" target="21" />
+      <module name="qooerp-report-service" target="21" />
+      <module name="qooerp-report-start" target="21" />
+      <module name="qooerp-sales-service" target="21" />
+      <module name="qooerp-sales-start" target="21" />
+      <module name="qooerp-scheduler-service" target="21" />
+      <module name="qooerp-scheduler-start" target="21" />
+      <module name="qooerp-scm-service" target="21" />
+      <module name="qooerp-scm-start" target="21" />
+      <module name="qooerp-system-service" target="21" />
+      <module name="qooerp-system-start" target="21" />
+      <module name="qooerp-user-service" target="21" />
+      <module name="qooerp-user-start" target="21" />
+      <module name="qooerp-workflow-service" target="21" />
+      <module name="qooerp-workflow-start" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -85,6 +82,7 @@
       <module name="qooerp" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-ai-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-ai-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-auth" options="-parameters" />
       <module name="qooerp-auth-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-auth-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-crm-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
@@ -97,6 +95,7 @@
       <module name="qooerp-file-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-finance-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-finance-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-gateway" options="-parameters" />
       <module name="qooerp-gateway-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-gateway-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-hr-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
@@ -113,6 +112,9 @@
       <module name="qooerp-message-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-monitor-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-monitor-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-nacos" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-nacos-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
+      <module name="qooerp-nacos-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-notify-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-notify-start" options="-parameters -parameters -parameters -XDignore.symbol.file" />
       <module name="qooerp-organization-service" options="-parameters -parameters -parameters -XDignore.symbol.file" />

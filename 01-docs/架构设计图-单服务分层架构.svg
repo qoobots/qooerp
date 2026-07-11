@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1050" font-family="'Microsoft YaHei','PingFang SC',Arial,sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b"/>
+      <stop offset="100%" style="stop-color:#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="controllerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="domainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="repoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fa709a"/>
+      <stop offset="100%" style="stop-color:#fee140"/>
+    </linearGradient>
+    <linearGradient id="commonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c3483"/>
+      <stop offset="100%" style="stop-color:#a2b6df"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#232526"/>
+      <stop offset="100%" style="stop-color:#414345"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowPink" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f5576c"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4facfe"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#43e97b"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="0" y="0" width="1300" height="50" fill="url(#headerGrad)"/>
+  <text x="650" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">QooERP 单微服务分层架构图</text>
+  <text x="650" y="47" text-anchor="middle" fill="#8899aa" font-size="10">*-start 启动模块 + *-service 业务模块 + basic-common 公共模块</text>
+
+  <!-- ======================== 左侧：start 启动模块 ======================== -->
+  <rect x="20" y="62" width="340" height="280" rx="10" fill="#f0fff4" stroke="#43e97b" stroke-width="2"/>
+  <rect x="20" y="62" width="340" height="32" rx="10" fill="url(#startGrad)"/>
+  <rect x="20" y="78" width="340" height="16" fill="url(#startGrad)"/>
+  <text x="190" y="83" text-anchor="middle" fill="white" font-size="14" font-weight="bold">*-start 启动模块</text>
+
+  <!-- Application 启动类 -->
+  <rect x="40" y="108" width="300" height="65" rx="6" fill="white" stroke="#43e97b" stroke-width="1" filter="url(#shadow)"/>
+  <text x="55" y="128" fill="#43e97b" font-size="12" font-weight="bold">XxxApplication.java</text>
+  <text x="55" y="145" fill="#555" font-size="9">@SpringBootApplication</text>
+  <text x="55" y="160" fill="#555" font-size="9">@EnableDiscoveryClient (微服务模式)</text>
+
+  <!-- 配置层 -->
+  <rect x="40" y="183" width="300" height="70" rx="6" fill="white" stroke="#43e97b" stroke-width="1"/>
+  <text x="55" y="203" fill="#43e97b" font-size="12" font-weight="bold">配置资源</text>
+  <text x="55" y="220" fill="#555" font-size="9">application.yml — 端口/数据源/日志</text>
+  <text x="55" y="237" fill="#555" font-size="9">bootstrap.yml — Nacos 配置中心</text>
+  <text x="55" y="252" fill="#555" font-size="9">logback-spring.xml — 日志配置</text>
+
+  <!-- 依赖箭头 -->
+  <line x1="340" y1="175" x2="385" y2="175" stroke="#43e97b" stroke-width="2" stroke-dasharray="6,2" marker-end="url(#arrowGreen)"/>
+  <text x="363" y="168" fill="#43e97b" font-size="8" font-weight="bold">依赖</text>
+
+  <!-- ======================== 中间：service 业务逻辑模块 ======================== -->
+  <rect x="390" y="62" width="550" height="540" rx="10" fill="#f5faff" stroke="#4facfe" stroke-width="2"/>
+  <rect x="390" y="62" width="550" height="32" rx="10" fill="url(#serviceGrad)"/>
+  <rect x="390" y="78" width="550" height="16" fill="url(#serviceGrad)"/>
+  <text x="665" y="83" text-anchor="middle" fill="white" font-size="14" font-weight="bold">*-service 业务逻辑模块</text>
+
+  <!-- Controller 层 -->
+  <rect x="410" y="108" width="510" height="90" rx="8" fill="#fff0f5" stroke="#f5576c" stroke-width="1.5"/>
+  <text x="425" y="128" fill="#f5576c" font-size="13" font-weight="bold">Controller 层 — RESTful API</text>
+  <rect x="425" y="138" width="150" height="30" rx="4" fill="url(#controllerGrad)"/>
+  <text x="500" y="157" text-anchor="middle" fill="white" font-size="9">@RestController</text>
+  <rect x="585" y="138" width="150" height="30" rx="4" fill="url(#controllerGrad)"/>
+  <text x="660" y="157" text-anchor="middle" fill="white" font-size="9">@Validated 参数校验</text>
+  <rect x="745" y="138" width="155" height="30" rx="4" fill="url(#controllerGrad)"/>
+  <text x="822" y="157" text-anchor="middle" fill="white" font-size="9">Swagger/OpenAPI 文档</text>
+  <text x="425" y="190" fill="#888" font-size="9">接收 HTTP 请求 → 参数校验 → 调用 Service → 返回统一响应</text>
+
+  <!-- 箭头 Controller -> Service -->
+  <line x1="665" y1="200" x2="665" y2="225" stroke="#f5576c" stroke-width="1.5" marker-end="url(#arrowPink)"/>
+
+  <!-- Service 层 -->
+  <rect x="410" y="225" width="510" height="90" rx="8" fill="#f0f8ff" stroke="#4facfe" stroke-width="1.5"/>
+  <text x="425" y="245" fill="#4facfe" font-size="13" font-weight="bold">Service 层 — 业务逻辑</text>
+  <rect x="425" y="255" width="150" height="30" rx="4" fill="url(#serviceGrad)"/>
+  <text x="500" y="274" text-anchor="middle" fill="white" font-size="9">@Service + @Transactional</text>
+  <rect x="585" y="255" width="150" height="30" rx="4" fill="url(#serviceGrad)"/>
+  <text x="660" y="274" text-anchor="middle" fill="white" font-size="9">接口 + 实现类分离</text>
+  <rect x="745" y="255" width="155" height="30" rx="4" fill="url(#serviceGrad)"/>
+  <text x="822" y="274" text-anchor="middle" fill="white" font-size="9">缓存注解 @Cacheable</text>
+  <text x="425" y="307" fill="#888" font-size="9">业务编排 · 事务管理 · 缓存操作 · 调用 Repository/Feign/MQ</text>
+
+  <!-- 箭头 Service -> Domain -->
+  <line x1="665" y1="317" x2="665" y2="342" stroke="#4facfe" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- Domain 层 -->
+  <rect x="410" y="342" width="510" height="90" rx="8" fill="#f8f0ff" stroke="#764ba2" stroke-width="1.5"/>
+  <text x="425" y="362" fill="#764ba2" font-size="13" font-weight="bold">Domain 层 — 领域模型</text>
+  <rect x="425" y="372" width="110" height="30" rx="4" fill="url(#domainGrad)"/>
+  <text x="480" y="391" text-anchor="middle" fill="white" font-size="9">Entity 实体</text>
+  <rect x="545" y="372" width="110" height="30" rx="4" fill="url(#domainGrad)"/>
+  <text x="600" y="391" text-anchor="middle" fill="white" font-size="9">VO/DTO 值对象</text>
+  <rect x="665" y="372" width="110" height="30" rx="4" fill="url(#domainGrad)"/>
+  <text x="720" y="391" text-anchor="middle" fill="white" font-size="9">Aggregate 聚合根</text>
+  <rect x="785" y="372" width="110" height="30" rx="4" fill="url(#domainGrad)"/>
+  <text x="840" y="391" text-anchor="middle" fill="white" font-size="9">Event 领域事件</text>
+  <text x="425" y="424" fill="#888" font-size="9">DDD 领域驱动设计 · 限界上下文 · 充血模型</text>
+
+  <!-- 箭头 Domain -> Repository -->
+  <line x1="665" y1="434" x2="665" y2="459" stroke="#764ba2" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- Repository 层 -->
+  <rect x="410" y="459" width="510" height="90" rx="8" fill="#fff8f0" stroke="#fa709a" stroke-width="1.5"/>
+  <text x="425" y="479" fill="#fa709a" font-size="13" font-weight="bold">Repository 层 — 数据访问</text>
+  <rect x="425" y="489" width="160" height="30" rx="4" fill="url(#repoGrad)"/>
+  <text x="505" y="508" text-anchor="middle" fill="white" font-size="9">MyBatis Plus Mapper</text>
+  <rect x="595" y="489" width="160" height="30" rx="4" fill="url(#repoGrad)"/>
+  <text x="675" y="508" text-anchor="middle" fill="white" font-size="9">Spring Data JPA Repository</text>
+  <rect x="765" y="489" width="135" height="30" rx="4" fill="url(#repoGrad)"/>
+  <text x="832" y="508" text-anchor="middle" fill="white" font-size="9">Flyway 迁移脚本</text>
+  <text x="425" y="541" fill="#888" font-size="9">通用 CRUD · 分页查询 · 条件构造器 · SQL 版本管理</text>
+
+  <!-- 其他组件 -->
+  <rect x="410" y="560" width="240" height="35" rx="5" fill="#e8f4fd" stroke="#4facfe" stroke-width="1"/>
+  <text x="530" y="582" text-anchor="middle" fill="#4facfe" font-size="10" font-weight="bold">Feign Client — 服务间调用</text>
+
+  <rect x="660" y="560" width="260" height="35" rx="5" fill="#e8f4fd" stroke="#4facfe" stroke-width="1"/>
+  <text x="790" y="582" text-anchor="middle" fill="#4facfe" font-size="10" font-weight="bold">MQ Handler — RocketMQ 消息处理</text>
+
+  <!-- ======================== 右侧：common 公共模块 ======================== -->
+  <rect x="960" y="62" width="320" height="360" rx="10" fill="#f0f4ff" stroke="#0c3483" stroke-width="2"/>
+  <rect x="960" y="62" width="320" height="32" rx="10" fill="url(#commonGrad)"/>
+  <rect x="960" y="78" width="320" height="16" fill="url(#commonGrad)"/>
+  <text x="1120" y="83" text-anchor="middle" fill="white" font-size="14" font-weight="bold">basic-common 公共模块</text>
+
+  <rect x="980" y="110" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="131" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-util — 工具类库</text>
+
+  <rect x="980" y="150" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="171" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-web — Web 公共组件</text>
+
+  <rect x="980" y="190" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="211" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-security — 安全组件</text>
+
+  <rect x="980" y="230" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="251" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-log — 日志组件</text>
+
+  <rect x="980" y="270" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="291" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-cache — 缓存组件</text>
+
+  <rect x="980" y="310" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="331" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-mybatis — Mybatis 组件</text>
+
+  <rect x="980" y="350" width="280" height="32" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="371" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-feign — Feign 组件</text>
+
+  <rect x="980" y="390" width="280" height="25" rx="5" fill="white" stroke="#0c3483" stroke-width="1"/>
+  <text x="1120" y="407" text-anchor="middle" fill="#0c3483" font-size="11" font-weight="bold">common-redis + common-tenant</text>
+
+  <!-- 依赖箭头 -->
+  <line x1="390" y1="280" x2="960" y2="280" stroke="#0c3483" stroke-width="1.5" stroke-dasharray="6,2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ======================== 下部：基础设施依赖 ======================== -->
+  <rect x="20" y="615" width="1260" height="85" rx="10" fill="#f5f5f5" stroke="#555" stroke-width="1.5"/>
+  <text x="35" y="638" fill="#555" font-size="13" font-weight="bold">基础设施依赖（每个 *-service 模块共享的基础设施栈）</text>
+
+  <rect x="35" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="105" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Spring Boot 3.3.6</text>
+  <text x="105" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">核心框架</text>
+
+  <rect x="185" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="255" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Nacos 2.3</text>
+  <text x="255" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">注册+配置</text>
+
+  <rect x="335" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="405" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">MyBatis Plus 3.5.7</text>
+  <text x="405" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">ORM 框架</text>
+
+  <rect x="485" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="555" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">PostgreSQL 15+</text>
+  <text x="555" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">主数据库</text>
+
+  <rect x="635" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="705" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Redis 7.2 + Caffeine</text>
+  <text x="705" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">L2+L1 缓存</text>
+
+  <rect x="785" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="855" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Redisson 3.29</text>
+  <text x="855" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">分布式锁</text>
+
+  <rect x="935" y="650" width="140" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="1005" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Flyway 10</text>
+  <text x="1005" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">数据库迁移</text>
+
+  <rect x="1085" y="650" width="180" height="38" rx="5" fill="url(#infraGrad)"/>
+  <text x="1175" y="666" text-anchor="middle" fill="white" font-size="9" font-weight="bold">Springdoc OpenAPI</text>
+  <text x="1175" y="681" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7">API 文档</text>
+
+  <!-- ======================== 具体模块示例 ======================== -->
+  <rect x="20" y="715" width="1260" height="175" rx="10" fill="#fafafa" stroke="#ddd" stroke-width="1.5"/>
+  <text x="35" y="738" fill="#555" font-size="13" font-weight="bold">实际模块分层示例</text>
+
+  <!-- qooerp-auth 示例 -->
+  <rect x="35" y="750" width="380" height="130" rx="8" fill="#fff0f5" stroke="#f5576c" stroke-width="1"/>
+  <text x="50" y="770" fill="#f5576c" font-size="12" font-weight="bold">qooerp-auth（独立单体结构）</text>
+  <text x="50" y="788" fill="#555" font-size="9">AuthApplication.java</text>
+  <text x="50" y="803" fill="#555" font-size="9">├─ controller/ — 7个Controller</text>
+  <text x="50" y="818" fill="#555" font-size="9">│  AuthController · CaptchaController · MfaController</text>
+  <text x="50" y="833" fill="#555" font-size="9">│  OAuth2Controller · DeviceController · ...</text>
+  <text x="50" y="848" fill="#555" font-size="9">├─ service/ — 9个Service+Impl</text>
+  <text x="50" y="863" fill="#555" font-size="9">├─ entity/ — AuthUser · AuthLoginLog · ...</text>
+  <text x="50" y="878" fill="#555" font-size="9">└─ config/ · util/ · enums/ · dto/</text>
+
+  <!-- qooerp-system 示例 -->
+  <rect x="435" y="750" width="410" height="130" rx="8" fill="#f0f8ff" stroke="#4facfe" stroke-width="1"/>
+  <text x="450" y="770" fill="#4facfe" font-size="12" font-weight="bold">qooerp-system（start/service 分离结构）</text>
+  <text x="450" y="788" fill="#555" font-size="9">qooerp-system-start/</text>
+  <text x="460" y="803" fill="#555" font-size="9">├─ SystemApplication.java (@EnableDiscoveryClient)</text>
+  <text x="460" y="818" fill="#555" font-size="9">└─ resources/application.yml</text>
+  <text x="450" y="835" fill="#555" font-size="9">qooerp-system-service/</text>
+  <text x="460" y="850" fill="#555" font-size="9">├─ controller/ · service/ · domain/ · repository/</text>
+  <text x="460" y="865" fill="#555" font-size="9">├─ feign/ · mq/ · config/</text>
+  <text x="460" y="880" fill="#555" font-size="9">└─ pom.xml (依赖 basic-common)</text>
+
+  <!-- qooerp-gateway 示例 -->
+  <rect x="865" y="750" width="400" height="130" rx="8" fill="#f8fff0" stroke="#43e97b" stroke-width="1"/>
+  <text x="880" y="770" fill="#43e97b" font-size="12" font-weight="bold">qooerp-gateway（独立单体·Reactive）</text>
+  <text x="880" y="788" fill="#555" font-size="9">GatewayStartApplication.java</text>
+  <text x="880" y="803" fill="#555" font-size="9">├─ Spring Cloud Gateway (Reactive 栈)</text>
+  <text x="880" y="818" fill="#555" font-size="9">├─ LoadBalancer 客户端负载均衡</text>
+  <text x="880" y="833" fill="#555" font-size="9">├─ Sentinel Gateway 限流熔断</text>
+  <text x="880" y="848" fill="#555" font-size="9">├─ Nacos 服务发现 + 配置中心</text>
+  <text x="880" y="863" fill="#555" font-size="9">├─ Redisson + Redis Reactive</text>
+  <text x="880" y="878" fill="#555" font-size="9">└─ 无 @EnableDiscoveryClient (Reactive 自动)</text>
+
+  <!-- 图例 -->
+  <rect x="20" y="905" width="1260" height="40" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <rect x="140" y="918" width="20" height="12" rx="3" fill="url(#controllerGrad)"/>
+  <text x="168" y="929" fill="#555" font-size="10">Controller层</text>
+  <rect x="280" y="918" width="20" height="12" rx="3" fill="url(#serviceGrad)"/>
+  <text x="308" y="929" fill="#555" font-size="10">Service层</text>
+  <rect x="410" y="918" width="20" height="12" rx="3" fill="url(#domainGrad)"/>
+  <text x="438" y="929" fill="#555" font-size="10">Domain层</text>
+  <rect x="540" y="918" width="20" height="12" rx="3" fill="url(#repoGrad)"/>
+  <text x="568" y="929" fill="#555" font-size="10">Repository层</text>
+  <rect x="690" y="918" width="20" height="12" rx="3" fill="url(#commonGrad)"/>
+  <text x="718" y="929" fill="#555" font-size="10">公共模块</text>
+  <rect x="820" y="918" width="20" height="12" rx="3" fill="url(#startGrad)"/>
+  <text x="848" y="929" fill="#555" font-size="10">启动模块</text>
+</svg>

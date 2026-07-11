@@ -1,0 +1,17 @@
+com\qoobot\qooerp\gateway\GatewayStartApplication.class
+com\qoobot\qooerp\gateway\config\ActuatorConfig.class
+com\qoobot\qooerp\gateway\filter\AuthFilter.class
+com\qoobot\qooerp\gateway\config\SentinelConfig$1.class
+com\qoobot\qooerp\gateway\filter\TraceFilter.class
+com\qoobot\qooerp\gateway\properties\GatewayProperties.class
+com\qoobot\qooerp\gateway\controller\GatewayController.class
+com\qoobot\qooerp\gateway\config\SentinelConfig.class
+META-INF\spring-configuration-metadata.json
+com\qoobot\qooerp\gateway\config\RedisConfig.class
+com\qoobot\qooerp\gateway\filter\LogFilter.class
+com\qoobot\qooerp\gateway\service\DynamicRouteService.class
+com\qoobot\qooerp\gateway\config\ActuatorConfig$GatewayInfoEndpoint.class
+com\qoobot\qooerp\gateway\filter\RateLimitFilter.class
+com\qoobot\qooerp\gateway\config\GatewayConfig.class
+com\qoobot\qooerp\gateway\filter\PermissionFilter.class
+com\qoobot\qooerp\gateway\service\DynamicRouteService$1.class

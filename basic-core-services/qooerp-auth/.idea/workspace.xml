@@ -5,12 +5,172 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce7acd53-0ed4-42d8-8f73-3d242d3081cc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-docs/01-开源ERP千功能规划.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-docs/02-QooERP开发模块进度跟踪.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-docs/04-总体架构清单.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-docs/05-大型开源ERP系统开发准备工作清单.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/docs/02-应用设计.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/docs/04-API接口文档.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/annotation/DataScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/annotation/OperationLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/annotation/PreventDuplicateSubmit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/annotation/RequirePermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/aspect/LogAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/aspect/OperationLogAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/CacheConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/CommonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/I18nConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/MicrometerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/MyBatisPlusConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/config/OpenTelemetryConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/constant/CacheConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/constant/CommonConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/constant/ErrorCodeConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/constant/SystemConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/dto/BasePageQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/dto/PageQueryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/entity/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/enums/CommonStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/enums/LogType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/enums/LogicalType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/enums/OperationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/enums/ResponseCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/CacheException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/DataNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/DbException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/ExceptionHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/PermissionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/SystemException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/exception/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/handler/MyMetaObjectHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/interceptor/DataScopeInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/interceptor/PaginationInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/response/PageResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/response/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/result/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/security/AuthUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/security/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/security/PasswordUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/tenant/TenantContextHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/tenant/TenantInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/BeanUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/CryptoUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/DistributedLockUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/I18nUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/IpUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/JdbcTemplateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/JsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/RedisCacheUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/RedisLockUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/SecurityUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/SpringContextHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/util/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/vo/DictItemVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/java/com/qoobot/qooerp/common/vo/TreeNodeVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/resources/i18n/messages_en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/resources/i18n/messages_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-common/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-ai/qooerp-ai-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-ai/qooerp-ai-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-file/qooerp-file-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-file/qooerp-file-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-lowcode/qooerp-lowcode-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-lowcode/qooerp-lowcode-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-message/qooerp-message-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-message/qooerp-message-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-monitor/qooerp-monitor-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-monitor/qooerp-monitor-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-notify/qooerp-notify-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-notify/qooerp-notify-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-report/qooerp-report-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-report/qooerp-report-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-scheduler/qooerp-scheduler-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-scheduler/qooerp-scheduler-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../basic-feature-service/qooerp-workflow/qooerp-workflow-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../basic-feature-service/qooerp-workflow/qooerp-workflow-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-finance/qooerp-finance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-finance/qooerp-finance-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-hr/qooerp-hr-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-hr/qooerp-hr-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-inventory/qooerp-inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-inventory/qooerp-inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-purchase/qooerp-purchase-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-purchase/qooerp-purchase-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-sales/qooerp-sales-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-sales/qooerp-sales-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-core-services/qooerp-scm/qooerp-scm-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-core-services/qooerp-scm/qooerp-scm-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-expand-services/qooerp-crm/qooerp-crm-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-expand-services/qooerp-crm/qooerp-crm-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-expand-services/qooerp-production/qooerp-production-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-expand-services/qooerp-production/qooerp-production-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../business-expand-services/qooerp-project/qooerp-project-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../business-expand-services/qooerp-project/qooerp-project-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/docs/06-开发进度.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/docs/06-开发进度.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/desktop/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/desktop/src/renderer/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/desktop/src/renderer/composables/useNativeNotification.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/desktop/src/renderer/composables/useNativeNotification.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/capacitor.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/capacitor.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/composables/useCapacitorNotification.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/composables/useCapacitorNotification.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/views/mobile/MobileHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/views/mobile/MobileHome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/views/mobile/MobileTodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/mobile/src/views/mobile/MobileTodoList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/api/modules/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/api/modules/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/common/SearchCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/common/SearchCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/common/Table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/common/Table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/layout/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/components/layout/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/composables/usePerformance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/composables/usePerformance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/stores/modules/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/stores/modules/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/campaign-management/CampaignManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/campaign-management/CampaignManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/contact-management/ContactManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/contact-management/ContactManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/contract-management/ContractManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/contract-management/ContractManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-feedback/CustomerFeedback.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-feedback/CustomerFeedback.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-follow-up/CustomerFollowUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-follow-up/CustomerFollowUp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-lifecycle/CustomerLifecycle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-lifecycle/CustomerLifecycle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-management/CustomerManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-management/CustomerManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-segment/CustomerSegment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-segment/CustomerSegment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-service/CustomerService.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-service/CustomerService.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-value/CustomerValue.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/customer-value/CustomerValue.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/marketing-automation/MarketingAutomation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/marketing-automation/MarketingAutomation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/marketing-campaign/MarketingCampaign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/marketing-campaign/MarketingCampaign.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/mobile-push/MobilePush.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/mobile-push/MobilePush.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/partner-management/PartnerManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/partner-management/PartnerManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/sales-opportunity/SalesOpportunity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/sales-opportunity/SalesOpportunity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/social-media/SocialMedia.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/crm/social-media/SocialMedia.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/dashboard/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/budget/Budget.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/budget/Budget.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/fund-report/FundReport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/fund-report/FundReport.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/purchase-payment/PurchasePayment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/purchase-payment/PurchasePayment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/reimbursement/Reimbursement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/reimbursement/Reimbursement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/sales-receipt/SalesReceipt.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/finance/sales-receipt/SalesReceipt.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/recruitment/Recruitment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/recruitment/Recruitment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/self-service/SelfService.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/self-service/SelfService.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/training/Training.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/hr/training/Training.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/alert/Alert.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/alert/Alert.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/inbound/Inbound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/inbound/Inbound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/outbound/Outbound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/outbound/Outbound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/transfer/Transfer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/inventory/transfer/Transfer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/cost-analysis/CostAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/cost-analysis/CostAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/efficiency-analysis/EfficiencyAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/efficiency-analysis/EfficiencyAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/energy-management/EnergyManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/energy-management/EnergyManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/equipment-maintenance/EquipmentMaintenance.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/equipment-maintenance/EquipmentMaintenance.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/equipment-management/EquipmentManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/equipment-management/EquipmentManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/exception-handling/ExceptionHandling.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/exception-handling/ExceptionHandling.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/material-analysis/MaterialAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/material-analysis/MaterialAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/material-requirement-planning/MaterialRequirementPlanning.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/material-requirement-planning/MaterialRequirementPlanning.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/process-management/ProcessManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/process-management/ProcessManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/production-alert/ProductionAlert.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/production-alert/ProductionAlert.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/production-scheduling/ProductionScheduling.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/production-scheduling/ProductionScheduling.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/quality-inspection/QualityInspection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/quality-inspection/QualityInspection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/quality-management/QualityManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/quality-management/QualityManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/schedule-optimization/ScheduleOptimization.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/schedule-optimization/ScheduleOptimization.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/work-hours-management/WorkHoursManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/work-hours-management/WorkHoursManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/workshop-management/WorkshopManagement.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/production/workshop-management/WorkshopManagement.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-change/ProjectChange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-change/ProjectChange.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-communication/ProjectCommunication.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-communication/ProjectCommunication.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-cost/ProjectCost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-cost/ProjectCost.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-dashboard/ProjectDashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-dashboard/ProjectDashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-execution/ProjectExecution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-execution/ProjectExecution.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-feedback/ProjectFeedback.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-feedback/ProjectFeedback.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-initiation/ProjectInitiation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-initiation/ProjectInitiation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-knowledge/ProjectKnowledge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-knowledge/ProjectKnowledge.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-milestone/ProjectMilestone.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-milestone/ProjectMilestone.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-planning/ProjectPlanning.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-planning/ProjectPlanning.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-quality/ProjectQuality.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-quality/ProjectQuality.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-risk/ProjectRisk.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-risk/ProjectRisk.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-team/ProjectTeam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/project/project-team/ProjectTeam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/report/view/ReportView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/report/view/ReportView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/scm/inbound/Inbound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/scm/inbound/Inbound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/integration/WorkflowIntegration.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/integration/WorkflowIntegration.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/monitor/MonitorDashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/monitor/MonitorDashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/optimization/WorkflowOptimization.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/src/views/workflow/optimization/WorkflowOptimization.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/types/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/types/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../qooerp-frontend/packages/web/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,46 +178,79 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "qoobot-com"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;qoobot-com&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/qoobot-com/openerp.git",
-    "accountId": "5415de4d-f004-4096-b10f-a53db0db6890"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/qoobot-com/openerp.git&quot;,
+    &quot;accountId&quot;: &quot;5415de4d-f004-4096-b10f-a53db0db6890&quot;
   }
-}]]></component>
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="explicitlyEnabledProfiles" value="aliyun-gradle-plugin,aliyun-spring-plugin,aliyun-apache-snapshots,aliyun-google,aliyun-spring,aliyun-grails-core" />
+  </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="39lzPYYx7rdn2JVl4BjrXQit80H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.qooerp-auth-service [clean,install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/05workspaces/qooerp/qooerp-auth",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.qooerp-auth [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.qooerp-auth-service [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;发现新的/更新的数据库配置&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/05workspaces/qooerp/basic-core-services/qooerp-auth&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15408805&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39537573&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.PasswordUtil.executor&quot;: &quot;Run&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\05workspaces\qooerp\basic-core-services\qooerp-auth\src\main\java\com\qoobot\qooerp\auth\common" />
+      <recent name="D:\05workspaces\qooerp\basic-core-services\qooerp-auth\src\main\java\com\qoobot\qooerp\auth\common\constants" />
+      <recent name="D:\05workspaces\qooerp\basic-core-services\qooerp-auth\src\main\java\com\qoobot\qooerp\auth\security" />
+      <recent name="D:\05workspaces\qooerp\basic-core-services\qooerp-auth\src\main\java\com\qoobot\qooerp\auth\entity" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\05workspaces\qooerp\qooerp-auth\qooerp-auth-start\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qoobot.qooerp.auth.security" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -65,19 +258,33 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="qooerp-auth-start" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.auth.AuthApplication" />
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
+    <configuration name="PasswordUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qoobot.qooerp.auth.common.security.PasswordUtil" />
+      <module name="qooerp-auth" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="qooerp-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qoobot.qooerp.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AuthApplication" />
+        <item itemvalue="应用程序.PasswordUtil" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
       </set>
     </attachedChunks>
   </component>
@@ -89,7 +296,29 @@
       <option name="presentableId" value="Default" />
       <updated>1771285421507</updated>
       <workItem from="1771285422771" duration="1887000" />
+      <workItem from="1772437302849" duration="14810000" />
+      <workItem from="1772481731606" duration="1139000" />
+      <workItem from="1772501206466" duration="2509000" />
+      <workItem from="1772503764931" duration="19847000" />
+      <workItem from="1772525628635" duration="16708000" />
+      <workItem from="1772591362528" duration="1600000" />
+      <workItem from="1772594890752" duration="4221000" />
+      <workItem from="1772876364381" duration="4385000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qoobot/qooerp/auth/common/security/PasswordUtil.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

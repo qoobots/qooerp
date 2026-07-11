@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1100" font-family="'Microsoft YaHei','PingFang SC',Arial,sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="clientGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="gatewayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="authGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b"/>
+      <stop offset="100%" style="stop-color:#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="storageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c3483"/>
+      <stop offset="100%" style="stop-color:#a2b6df"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowRight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrowRightBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4facfe"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="0" y="0" width="1300" height="50" fill="url(#headerGrad)"/>
+  <text x="650" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="bold">QooERP 认证授权流程架构图</text>
+  <text x="650" y="47" text-anchor="middle" fill="#8899aa" font-size="10">OAuth2 + JWT + SSO + MFA + RBAC/ABAC</text>
+
+  <!-- ======================== 登录认证流程 ======================== -->
+  <rect x="20" y="60" width="1260" height="490" rx="10" fill="#f5faff" stroke="#4facfe" stroke-width="2"/>
+  <rect x="20" y="60" width="1260" height="30" rx="10" fill="url(#authGrad)"/>
+  <rect x="20" y="75" width="1260" height="15" fill="url(#authGrad)"/>
+  <text x="650" y="81" text-anchor="middle" fill="white" font-size="15" font-weight="bold">登录认证流程 Login Authentication Flow</text>
+
+  <!-- 客户端 -->
+  <rect x="40" y="105" width="180" height="380" rx="8" fill="url(#clientGrad)"/>
+  <text x="130" y="130" text-anchor="middle" fill="white" font-size="13" font-weight="bold">客户端</text>
+  <text x="130" y="148" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">Vue 3 前端</text>
+  <rect x="55" y="160" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="130" y="175" text-anchor="middle" fill="white" font-size="9">① 输入用户名密码</text>
+  <rect x="55" y="190" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="130" y="205" text-anchor="middle" fill="white" font-size="9">② 获取验证码</text>
+  <rect x="55" y="260" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="130" y="275" text-anchor="middle" fill="white" font-size="9">⑥ 保存 Token</text>
+  <rect x="55" y="320" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="130" y="335" text-anchor="middle" fill="white" font-size="9">⑧ 携带 Token 请求</text>
+  <rect x="55" y="420" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="130" y="435" text-anchor="middle" fill="white" font-size="9">⑫ 访问业务资源</text>
+
+  <!-- Gateway -->
+  <rect x="280" y="105" width="180" height="380" rx="8" fill="url(#gatewayGrad)"/>
+  <text x="370" y="130" text-anchor="middle" fill="white" font-size="13" font-weight="bold">API Gateway</text>
+  <text x="370" y="148" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">:8000</text>
+  <rect x="295" y="220" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="370" y="235" text-anchor="middle" fill="white" font-size="9">③ 路由到 Auth</text>
+  <rect x="295" y="340" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="370" y="355" text-anchor="middle" fill="white" font-size="9">⑨ 验证 JWT Token</text>
+  <rect x="295" y="370" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="370" y="385" text-anchor="middle" fill="white" font-size="9">⑩ 查询权限</text>
+  <rect x="295" y="400" width="150" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="370" y="415" text-anchor="middle" fill="white" font-size="9">⑪ 路由到目标服务</text>
+
+  <!-- Auth -->
+  <rect x="520" y="105" width="200" height="380" rx="8" fill="url(#authGrad)"/>
+  <text x="620" y="130" text-anchor="middle" fill="white" font-size="13" font-weight="bold">qooerp-auth</text>
+  <text x="620" y="148" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">:8001 · 94 Java文件</text>
+
+  <rect x="535" y="160" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="180" text-anchor="middle" fill="white" font-size="9">CaptchaService 验证码校验</text>
+
+  <rect x="535" y="195" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="215" text-anchor="middle" fill="white" font-size="9">④ AuthService 密码校验</text>
+
+  <rect x="535" y="230" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="250" text-anchor="middle" fill="white" font-size="9">TokenService 生成JWT</text>
+
+  <rect x="535" y="265" width="170" height="30" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="285" text-anchor="middle" fill="white" font-size="9">⑤ OAuth2Service 颁发令牌</text>
+
+  <rect x="535" y="300" width="170" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="315" text-anchor="middle" fill="white" font-size="9">MfaService 多因素认证</text>
+
+  <rect x="535" y="360" width="170" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="375" text-anchor="middle" fill="white" font-size="9">⑦ 返回 Token + 用户信息</text>
+
+  <rect x="535" y="420" width="170" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="620" y="435" text-anchor="middle" fill="white" font-size="9">Token 刷新 + 吊销</text>
+
+  <!-- 下游服务 -->
+  <rect x="780" y="105" width="230" height="380" rx="8" fill="url(#serviceGrad)"/>
+  <text x="895" y="130" text-anchor="middle" fill="white" font-size="13" font-weight="bold">下游服务</text>
+  <rect x="795" y="148" width="200" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="895" y="163" text-anchor="middle" fill="white" font-size="9">qooerp-user :8084 — 用户查询</text>
+  <rect x="795" y="175" width="200" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="895" y="190" text-anchor="middle" fill="white" font-size="9">qooerp-permission :8082 — 权限查询</text>
+  <rect x="795" y="202" width="200" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="895" y="217" text-anchor="middle" fill="white" font-size="9">qooerp-system :8083 — 系统配置</text>
+  <rect x="795" y="330" width="200" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="895" y="345" text-anchor="middle" fill="white" font-size="9">Feign 服务间调用</text>
+  <rect x="795" y="420" width="200" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="895" y="435" text-anchor="middle" fill="white" font-size="9">目标微服务</text>
+
+  <!-- 存储层 -->
+  <rect x="1070" y="105" width="190" height="380" rx="8" fill="url(#storageGrad)"/>
+  <text x="1165" y="130" text-anchor="middle" fill="white" font-size="13" font-weight="bold">存储层</text>
+  <rect x="1085" y="150" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="165" text-anchor="middle" fill="white" font-size="9">PostgreSQL</text>
+  <rect x="1085" y="178" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="193" text-anchor="middle" fill="white" font-size="9">qooerp_auth DB</text>
+  <rect x="1085" y="220" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="235" text-anchor="middle" fill="white" font-size="9">qooerp_user DB</text>
+  <rect x="1085" y="250" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="265" text-anchor="middle" fill="white" font-size="9">qooerp_permission DB</text>
+  <rect x="1085" y="300" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="315" text-anchor="middle" fill="white" font-size="9">Redis 缓存</text>
+  <rect x="1085" y="328" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="343" text-anchor="middle" fill="white" font-size="9">Token 存储</text>
+  <rect x="1085" y="356" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="371" text-anchor="middle" fill="white" font-size="9">权限缓存</text>
+  <rect x="1085" y="384" width="160" height="22" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="1165" y="399" text-anchor="middle" fill="white" font-size="9">登录日志记录</text>
+
+  <!-- 交互箭头 -->
+  <!-- 1 -->
+  <line x1="220" y1="185" x2="280" y2="185" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="250" y="178" fill="#888" font-size="7">POST /api/auth/login</text>
+
+  <!-- 2 -->
+  <line x1="460" y1="185" x2="520" y2="185" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="490" y="178" fill="#888" font-size="7">转发</text>
+
+  <!-- 3 Auth->User -->
+  <line x1="720" y1="165" x2="780" y2="165" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="750" y="158" fill="#888" font-size="7">Feign: 查询用户</text>
+
+  <!-- 4 Auth->DB -->
+  <line x1="720" y1="200" x2="1070" y2="200" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="900" y="193" fill="#888" font-size="7">查询用户信息/校验密码</text>
+
+  <!-- 5 Auth->Redis -->
+  <line x1="720" y1="245" x2="1070" y2="310" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="900" y="280" fill="#888" font-size="7">存储 Token</text>
+
+  <!-- 6 返回 Token -->
+  <line x1="520" y1="370" x2="280" y2="370" stroke="#4facfe" stroke-width="2" marker-end="url(#arrowRight)"/>
+  <text x="400" y="363" fill="#4facfe" font-size="8" font-weight="bold">{accessToken, refreshToken, userInfo}</text>
+
+  <!-- 7 携带Token请求 -->
+  <line x1="220" y1="330" x2="280" y2="330" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="250" y="323" fill="#888" font-size="7">Header: Bearer {token}</text>
+
+  <!-- 8 验证Token -->
+  <line x1="460" y1="355" x2="520" y2="355" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="490" y="348" fill="#888" font-size="7">JWT 验证</text>
+
+  <!-- 9 查询权限 -->
+  <line x1="460" y1="385" x2="780" y2="385" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="620" y="378" fill="#888" font-size="7">查询用户权限</text>
+
+  <!-- 10 路由到目标服务 -->
+  <line x1="460" y1="430" x2="780" y2="430" stroke="#4facfe" stroke-width="2" marker-end="url(#arrowRight)"/>
+  <text x="620" y="423" fill="#4facfe" font-size="8" font-weight="bold">路由转发 + 权限校验通过</text>
+
+  <!-- ======================== 下半部分：权限模型 ======================== -->
+  <rect x="20" y="560" width="1260" height="230" rx="10" fill="#f8fff8" stroke="#43e97b" stroke-width="2"/>
+  <rect x="20" y="560" width="1260" height="30" rx="10" fill="url(#serviceGrad)"/>
+  <rect x="20" y="575" width="1260" height="15" fill="url(#serviceGrad)"/>
+  <text x="650" y="581" text-anchor="middle" fill="white" font-size="15" font-weight="bold">权限模型 RBAC + ABAC 复合模型</text>
+
+  <!-- 用户 -->
+  <rect x="50" y="605" width="140" height="60" rx="8" fill="url(#clientGrad)" filter="url(#shadow)"/>
+  <text x="120" y="630" text-anchor="middle" fill="white" font-size="13" font-weight="bold">用户 User</text>
+  <text x="120" y="650" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">qooerp-user</text>
+
+  <!-- 角色 -->
+  <rect x="260" y="605" width="140" height="60" rx="8" fill="url(#gatewayGrad)" filter="url(#shadow)"/>
+  <text x="330" y="630" text-anchor="middle" fill="white" font-size="13" font-weight="bold">角色 Role</text>
+  <text x="330" y="650" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">RBAC 基础</text>
+
+  <!-- 权限 -->
+  <rect x="470" y="605" width="140" height="60" rx="8" fill="url(#authGrad)" filter="url(#shadow)"/>
+  <text x="540" y="630" text-anchor="middle" fill="white" font-size="13" font-weight="bold">权限 Permission</text>
+  <text x="540" y="650" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">按钮/菜单/数据</text>
+
+  <!-- 资源 -->
+  <rect x="680" y="605" width="140" height="60" rx="8" fill="url(#serviceGrad)" filter="url(#shadow)"/>
+  <text x="750" y="630" text-anchor="middle" fill="white" font-size="13" font-weight="bold">资源 Resource</text>
+  <text x="750" y="650" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">API/页面/字段</text>
+
+  <!-- 策略 -->
+  <rect x="890" y="605" width="140" height="60" rx="8" fill="url(#storageGrad)" filter="url(#shadow)"/>
+  <text x="960" y="630" text-anchor="middle" fill="white" font-size="13" font-weight="bold">策略 Policy</text>
+  <text x="960" y="650" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="9">ABAC 属性策略</text>
+
+  <!-- 关联箭头 -->
+  <line x1="190" y1="635" x2="260" y2="635" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="225" y="628" fill="#888" font-size="8">N:M</text>
+  <line x1="400" y1="635" x2="470" y2="635" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="435" y="628" fill="#888" font-size="8">N:M</text>
+  <line x1="610" y1="635" x2="680" y2="635" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="645" y="628" fill="#888" font-size="8">1:N</text>
+  <line x1="820" y1="635" x2="890" y2="635" stroke="#555" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  <text x="855" y="628" fill="#888" font-size="8">属性匹配</text>
+
+  <!-- 权限粒度说明 -->
+  <rect x="50" y="685" width="1210" height="95" rx="6" fill="white" stroke="#43e97b" stroke-width="1"/>
+  <text x="65" y="705" fill="#43e97b" font-size="12" font-weight="bold">权限粒度（qooerp-permission :8082 实现）</text>
+
+  <rect x="65" y="715" width="280" height="28" rx="4" fill="#e6fff0"/>
+  <text x="205" y="734" text-anchor="middle" fill="#555" font-size="10">页面级：路由权限控制（菜单可见/不可见）</text>
+
+  <rect x="365" y="715" width="280" height="28" rx="4" fill="#e6fff0"/>
+  <text x="505" y="734" text-anchor="middle" fill="#555" font-size="10">按钮级：操作权限（增/删/改/查/导出）</text>
+
+  <rect x="665" y="715" width="280" height="28" rx="4" fill="#e6fff0"/>
+  <text x="805" y="734" text-anchor="middle" fill="#555" font-size="10">字段级：敏感字段可见/编辑控制</text>
+
+  <rect x="965" y="715" width="280" height="28" rx="4" fill="#e6fff0"/>
+  <text x="1105" y="734" text-anchor="middle" fill="#555" font-size="10">数据级：行级数据隔离（租户/部门）</text>
+
+  <rect x="65" y="750" width="1180" height="22" rx="4" fill="#f0fff4"/>
+  <text x="650" y="765" text-anchor="middle" fill="#43e97b" font-size="9">ABAC 策略引擎：基于用户属性（部门/职级/角色）+ 资源属性（类型/密级）+ 环境属性（时间/IP/设备）动态决策</text>
+
+  <!-- ======================== OAuth2 / SSO ======================== -->
+  <rect x="20" y="800" width="1260" height="100" rx="10" fill="#f0f0ff" stroke="#667eea" stroke-width="2"/>
+  <rect x="20" y="800" width="1260" height="30" rx="10" fill="url(#clientGrad)"/>
+  <rect x="20" y="815" width="1260" height="15" fill="url(#clientGrad)"/>
+  <text x="650" y="821" text-anchor="middle" fill="white" font-size="15" font-weight="bold">OAuth2 / OIDC / SSO 单点登录</text>
+
+  <rect x="50" y="842" width="180" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="140" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">Spring Authorization Server</text>
+  <text x="140" y="877" text-anchor="middle" fill="#888" font-size="8">OAuth2 授权服务器</text>
+
+  <rect x="260" y="842" width="180" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="350" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">OIDC 1.0</text>
+  <text x="350" y="877" text-anchor="middle" fill="#888" font-size="8">OpenID Connect</text>
+
+  <rect x="470" y="842" width="180" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="560" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">JWT Token (jjwt 0.12.5)</text>
+  <text x="560" y="877" text-anchor="middle" fill="#888" font-size="8">Access Token + Refresh Token</text>
+
+  <rect x="680" y="842" width="180" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="770" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">MFA 多因素认证</text>
+  <text x="770" y="877" text-anchor="middle" fill="#888" font-size="8">短信验证码 · TOTP</text>
+
+  <rect x="890" y="842" width="180" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="980" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">第三方登录</text>
+  <text x="980" y="877" text-anchor="middle" fill="#888" font-size="8">微信 · 钉钉 · 企业微信</text>
+
+  <rect x="1100" y="842" width="160" height="45" rx="6" fill="white" stroke="#667eea" stroke-width="1" filter="url(#shadow)"/>
+  <text x="1180" y="860" text-anchor="middle" fill="#667eea" font-size="10" font-weight="bold">设备管理</text>
+  <text x="1180" y="877" text-anchor="middle" fill="#888" font-size="8">登录设备记录</text>
+
+  <!-- 图例 -->
+  <rect x="20" y="912" width="1260" height="35" rx="6" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+  <text x="140" y="934" fill="#555" font-size="10">✅ 已实现（94个Java文件）  ·  qooerp-auth + qooerp-permission 两个服务完成核心认证授权能力  ·  支持 OAuth2/OIDC/JWT/MFA/SSO/RBAC+ABAC</text>
+</svg>

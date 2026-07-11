@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"com.qoobot.qooerp.gateway","c":"GatewayStartApplication","l":"GatewayStartApplication()","u":"%3Cinit%3E()"},{"p":"com.qoobot.qooerp.gateway","c":"GatewayStartApplication","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
